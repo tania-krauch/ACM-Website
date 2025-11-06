@@ -1,6 +1,6 @@
-WEBSITE DEVELOPMENT AGENDA, folks :)
+### WEBSITE DEVELOPMENT AGENDA, folks :)
 
-### UI / Design Improvements
+## UI / Design Improvements
 
 - Header
   - Make the header **sticky** (remains visible while scrolling)
@@ -8,28 +8,28 @@ WEBSITE DEVELOPMENT AGENDA, folks :)
 
 - Hero Section (Top Banner)
   - Replace the current screen recording background with a **custom animated ASCII-style background**, inspired by the **VS Code website animation**
-  - Create our own version that fits the ACM brand and color scheme.
+  - Create our own version that fits the ACM brand and color scheme
 
 - Cards and Layout
   - Fix **vertical spacing** between cards on **mobile view** — currently, some cards blend together
-  - The **calendar section spacing is fine** as is.
+  - The **calendar section spacing is fine** as is
 
 - Footer
   - Adjust **spacing and alignment**
-  - Add or fix **icon links** (socials, GitHub, contact, etc.).
+  - Add or fix **icon links** (socials, GitHub, contact, etc.)
 
 
-### Functionality & Features
+## Functionality & Features
 
 - Animations
   - None of the site animations are currently functioning
-  - Review animation triggers, libraries, and dependencies to ensure they load correctly.
+  - Review animation triggers, libraries, and dependencies to ensure they load correctly
 
 - Gallery
-  - Implement a **scrollable image gallery** or carousel for better visual flow.
+  - Implement a **scrollable image gallery** or carousel for better visual flow
 
 - Card Hover Effects
-  - Add **hover animations** to cards for interactivity and a modern touch.
+  - Add **hover animations** to cards for interactivity and a modern touch
 
 - Events Database (Optional)
   - Consider creating a **database or JSON file** for managing upcoming events
