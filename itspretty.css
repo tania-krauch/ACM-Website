@@ -116,7 +116,7 @@ video, .video {
 }
 
 /* ========== GALLERY ========== */
-.rvt-card__image img {
+rvt-card__image img {
       border-radius: var(--rvt-border-radius-lg, 0.5rem); 
       overflow: hidden;
       display: block;
@@ -187,7 +187,12 @@ video, .video {
   .button-group {
     flex-direction: row;
   }
-  
+  .hero-subtitle {
+    font-size: 1.75rem;
+  }
+  .hero-department {
+    font-size: 1.25rem;
+  }
   .hero-title {
     font-size: 5rem;
   }
