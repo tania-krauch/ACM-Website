@@ -5,15 +5,15 @@
 
 - Header
   - Make the header **sticky** (remains visible while scrolling)
-  - Apply a **solid crimson background** to match official Indiana University website styling
+  - Apply a **solid crimson background** to match official Indiana University website styling [https://bloomington.iu.edu/index.html]
 
 - Hero Section (Top Banner)
-  - Replace the current screen recording background with a **custom animated ASCII-style background**, inspired by the **VS Code website animation**
+  - Replace the current screen recording background with a **custom animated ASCII-style background**, inspired by the **VS Code website animation** [https://code.visualstudio.com/]
   - Create our own version that fits the ACM brand and color scheme
 
 - Cards and Layout
   - Fix **vertical spacing** between cards on **mobile view** — currently, some cards blend together
-  - The **calendar section spacing is fine** as is
+  - The **calendar section spacing is the standard** 
 
 - Footer
   - Adjust **spacing and alignment**
