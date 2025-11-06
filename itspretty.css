@@ -51,6 +51,18 @@ video, .video {
   height: 100%;
   display: block;
   z-index: 1;
+}
+
+/* Overlay gradient (BLACK) */
+.black-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0.4) 100%);
+  z-index: 2;
+}
 
 /* Foreground content */
 .content, .hero-content {
@@ -64,7 +76,6 @@ video, .video {
 }
 
 /* ========== HERO TEXT STYLES ========== */
-
 .hero-subtitle {
   font-size: 5rem;
   font-weight: 300;
@@ -124,7 +135,7 @@ video, .video {
   transition: background-color 0.2s ease;
 }
 .rvt-button--crimson:hover {
-  background-color: rgb(105, 10, 0);
+  background-color: rgba(0, 98, 152, 1);
   color: white;
 }
 
@@ -145,19 +156,6 @@ video, .video {
 }
 
 /* ========== GALLERY ========== */
-rvt-card__image img {
-      border-radius: var(--rvt-border-radius-lg, 0.5rem); 
-      overflow: hidden;
-      display: block;
-      width: 100%;
-      height: auto;
-  }
-
-  .rvt-card {
-      border-radius: var(--rvt-border-radius-lg, 0.5rem);
-      overflow: hidden; 
-  }
-
 .gallery-wrapper {
   position: relative;
 }
