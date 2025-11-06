@@ -1,6 +1,7 @@
-## WEBSITE DEVELOPMENT AGENDA, folks :)
+# WEBSITE DEVELOPMENT AGENDA, folks :)
 
-### UI / Design Improvements
+
+## UI / Design Improvements
 
 - Header
   - Make the header **sticky** (remains visible while scrolling)
@@ -19,7 +20,7 @@
   - Add or fix **icon links** (socials, GitHub, contact, etc.)
 
 
-### Functionality & Features
+## Functionality & Features
 
 - Animations
   - None of the site animations are currently functioning
@@ -35,7 +36,8 @@
   - Consider creating a **database or JSON file** for managing upcoming events
   - If not, we can **manually update** events weekly
 
-## Questions or ideas?
+
+# Questions or ideas?
 Feel free to open an issue, comment on this README, or message in our Discord Website Team Channel. Let’s keep the collaboration going!
 
 
