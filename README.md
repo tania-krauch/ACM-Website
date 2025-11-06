@@ -1,14 +1,41 @@
-AGENDA
+WEBSITE DEVELOPMENT AGENDA, folks :)
 
-Overview
-- improve the header, so that it stays and solidifies in crimson, just like all the main IU websites
-- work on the background image for the hero (first) section: it's supposed to resemble the VS Code Website Background ASCII animation, and we will put our own spin on it. Right now, what we have is a screen recording of my code (demo -- it most definetely could be better!)
-- adjust the card spacing for mobile users (the calendar section is fine, the rest of the card elements blend vertically)
-- think of a database for events? Or we can just manually update it weekly
-- adjust the footer spacing and iconed links
-  
-- NONE of the animation works
-  - get the gallery element to scroll through pictures
-  - hover animation on cards
+### UI / Design Improvements
 
-Please let me know if you have any questions! :)
+- Header
+  - Make the header **sticky** (remains visible while scrolling)
+  - Apply a **solid crimson background** to match official Indiana University website styling
+
+- Hero Section (Top Banner)
+  - Replace the current screen recording background with a **custom animated ASCII-style background**, inspired by the **VS Code website animation**
+  - Create our own version that fits the ACM brand and color scheme.
+
+- Cards and Layout
+  - Fix **vertical spacing** between cards on **mobile view** — currently, some cards blend together
+  - The **calendar section spacing is fine** as is.
+
+- Footer
+  - Adjust **spacing and alignment**
+  - Add or fix **icon links** (socials, GitHub, contact, etc.).
+
+
+### Functionality & Features
+
+- Animations
+  - None of the site animations are currently functioning
+  - Review animation triggers, libraries, and dependencies to ensure they load correctly.
+
+- Gallery
+  - Implement a **scrollable image gallery** or carousel for better visual flow.
+
+- Card Hover Effects
+  - Add **hover animations** to cards for interactivity and a modern touch.
+
+- Events Database (Optional)
+  - Consider creating a **database or JSON file** for managing upcoming events
+  - If not, we can **manually update** events weekly
+
+### Questions or ideas?
+Feel free to open an issue, comment on this README, or message in our Discord Website Team Channel. Let’s keep the collaboration going!
+
+
