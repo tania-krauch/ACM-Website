@@ -2,11 +2,12 @@
 
 View our website here: https://tania-krauch.github.io/ACM-Chapter-Website/
 
-## UI / Design Improvements
+### PRIMARY
+## Weekly Challenge Page
+## Portfolio Page
 
-- Header
-  - Make the header **sticky** (remains visible while scrolling)
-  - Apply a **solid crimson background** to match official Indiana University website styling [https://bloomington.iu.edu/index.html]
+### SECONDAARY CONCERN
+## UI / Design Improvements
 
 - Hero Section (Top Banner)
   - Replace the current screen recording background with a **custom animated ASCII-style background**, inspired by the **VS Code website animation** [https://code.visualstudio.com/]
@@ -16,22 +17,15 @@ View our website here: https://tania-krauch.github.io/ACM-Chapter-Website/
   - Fix **vertical spacing** between cards on **mobile view** — currently, some cards blend together
   - The **calendar section spacing is the standard** 
 
-- Footer
+- Footer: Social media
   - Adjust **spacing and alignment**
   - Add or fix **icon links** (socials, GitHub, contact, etc.)
 
 
 ## Functionality & Features
 
-- Animations
-  - None of the site animations are currently functioning
-  - Review animation triggers, libraries, and dependencies to ensure they load correctly
-
 - Gallery
-  - Implement a **scrollable image gallery** or carousel for better visual flow
-
-- Card Hover Effects
-  - Add **hover animations** to cards for interactivity and a modern touch
+  - Improve the scroll flow
 
 - Events Database (Optional)
   - Consider creating a **database or JSON file** for managing upcoming events
