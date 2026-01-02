@@ -5,6 +5,10 @@
   box-sizing: inherit;
 }
 
+main {
+  padding-top: 80px; /* match header height */
+}
+
 /* ========== BASE STYLES ========== */
 body {
   margin: 0;
@@ -75,6 +79,22 @@ video, .video {
   margin: 0 auto;
 }
 
+.rvt-header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.rvt-card--raised {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rvt-card--raised:hover {
+  transform: scale(1.05);
+}
+
 /* ========== HERO TEXT STYLES ========== */
 .hero-subtitle {
   font-size: 5rem;
@@ -93,11 +113,12 @@ video, .video {
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: 4rem !important;
   font-weight: 700;
   color: rgb(0, 0, 0);
-  max-width: 900px;
-  margin: 9.5rem 0 9rem;
+  max-width: 700px;
+  margin-top: 8rem;
+  margin-bottom: 6rem;
 }
 
 .hero-description {
@@ -135,7 +156,7 @@ video, .video {
   transition: background-color 0.2s ease;
 }
 .rvt-button--crimson:hover {
-  background-color: rgba(0, 98, 152, 1);
+  background-color: #800000;
   color: white;
 }
 
@@ -151,52 +172,123 @@ video, .video {
   transition: all 0.2s ease;
 }
 .rvt-button--outline-white:hover {
-  background-color: rgb(0, 0, 0);
-  color: #ffffff;
+  background-color: #f8f9fa;
+  color: #000000;
 }
 
 /* ========== GALLERY ========== */
 .gallery-wrapper {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1200px;
 }
 .gallery-window {
   overflow: hidden;
+  touch-action: pan-y;
   width: 100%;
 }
 .gallery-track {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 0.45s ease;
+  cursor: grab;
 }
+
+.gallery-track.dragging {
+  transition: none;
+  cursor: grabbing;
+}
+
+.gallery-track:active {
+  cursor: grabbing;
+}
+
+.gallery-item {
+  flex: 0 0 25%; /* 4 images visible */
+  padding: 1rem;
+  width: 25%;
+  flex-shrink: 0;
+  aspect-ratio: 3 / 4; /* change to 1 / 1 or 16 / 9 if you want */
+}
+
+.gallery-item img {
+  box-shadow: 0 0 10px rgba(186, 185, 185, 0.5);
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 14px;
+  object-fit: cover;     /* makes image fill container */
+}
+
 
 /* Arrow buttons */
 .gallery-btn {
   position: absolute;
-  top: 60%;
-  transform: translateY(-50%);
+  top: 53%;
   background: white;
   border: 2px solid var(--rvt-color-blue-300, #ddd);
   color: var(--rvt-color-blue-300, #333);
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  cursor: pointer;
   font-size: 20px;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease;
   z-index: 10;
+
+  transform: translateY(-50%) scale(0.9);
+
+  cursor: pointer;
+  opacity: 0.3; /* partially visible even when idle */
+  pointer-events: auto;
+  
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  animation: arrowPulse 2s infinite alternate; /* idle pulsing */
 }
+@keyframes arrowPulse {
+  0% { opacity: 0.3; transform: translateY(-50%) scale(0.9); }
+  50% { opacity: 0.45; transform: translateY(-50%) scale(0.95); }
+  100% { opacity: 0.3; transform: translateY(-50%) scale(0.9); }
+}
+
+
 .gallery-btn:hover {
-  background: var(--rvt-color-black-100, #f2f2f2);
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1); /* grow slightly on hover */
+  animation: none;
 }
+
 .gallery-btn--left {
-  left: -50px;
-  display: none;
+  left: -70px;
 }
+
 .gallery-btn--right {
-  right: -90px;
+  right: -70px;
+}
+
+/* Show fully on drag */
+.gallery-wrapper.dragging .gallery-btn {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.05);
+  animation: none; /* stop pulsing during drag */
+}
+
+.gallery-wrapper.dragging {
+  user-select: none;
+}
+
+.gallery-btn.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-50%) scale(1);
+}
+
+.gallery-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
 }
 
 /* ========== LIST STYLES ========== */
@@ -208,6 +300,7 @@ video, .video {
 .officer-bullets li {
   margin-bottom: 0.25rem;
 }
+
 
 /* ========== RESPONSIVE ========== */
 @media (min-width: 640px) {

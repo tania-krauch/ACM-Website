@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex">
-  <title>ACM Chapter</title>
+  <title>ACM</title>
+  <link rel="icon" type="image/png" href="images/iu-d.png">
   <link rel="stylesheet" href="https://unpkg.com/rivet-core@2.9.0/css/rivet.min.css">
   <link rel="stylesheet" href="https://unpkg.com/rivet-stickers@0.3.1/dist/rivet-sticker-element.css">
   <script type="module" src="https://unpkg.com/rivet-stickers@0.3.1/dist/rivet-stickers.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/rivet-icons@3.0.1/dist/rivet-icon-element.css">
   <link rel="stylesheet" href="itspretty.css"/>
   <script type="module" src="https://unpkg.com/rivet-icons@3.0.1/dist/rivet-icons.js"></script>
+  
 </head>
-
 
 <body class="rvt-layout">
 
@@ -32,7 +33,7 @@
     *********************************************************************** -->
     
     <div class="rvt-header-global">
-        <div class="rvt-container-xl">
+        <div class="rvt-container-lg">
             <div class="rvt-header-global__inner">
                 <div class="rvt-header-global__logo-slot">
                     <a class="rvt-lockup" href="#0">
@@ -40,6 +41,9 @@
                         <!-- **************************************************
                             Trident logo
                         *************************************************** -->
+                        <!--
+                        <img src="images/acm-c.png"  alt="ACM Logo" width="45" height="45">
+                        --> 
 
                         <div class="rvt-lockup__tab">
                             <svg xmlns="http://www.w3.org/2000/svg" class="rvt-lockup__trident" viewBox="0 0 28 34">
@@ -53,7 +57,7 @@
 
                         <div class="rvt-lockup__body">
                             <span class="rvt-lockup__title">ACM Chapter</span>
-                            <span class="rvt-lockup__subtitle">Indiana University South Bend</span>
+                            <span class="rvt-lockup__subtitle">IU South Bend</span>
                         </div>
                     </a>
                 </div>
@@ -74,9 +78,6 @@
                                 <li class="rvt-header-menu__item">
                                     <a class="rvt-header-menu__link" href="#Home">Home</a>
                                 </li>
-                                <li class="rvt-header-menu__item">
-                                    <a class="rvt-header-menu__link" href="#About Our Chapter">About</a>
-                                </li>
                                 <li class="rvt-header-menu__item rvt-header-menu__item--current">
                                     <div class="rvt-header-menu__dropdown rvt-dropdown" data-rvt-dropdown="primary-nav-3">
                                         <div class="rvt-header-menu__group">
@@ -89,7 +90,7 @@
                                         <div class="rvt-header-menu__submenu rvt-dropdown__menu rvt-dropdown__menu--right" data-rvt-dropdown-menu="primary-nav-3" hidden>
                                             <ul class="rvt-header-menu__submenu-list">
                                                 <li class="rvt-header-menu__submenu-item">
-                                                    <a class="rvt-header-menu__submenu-link" href="#What we do">What We Do</a>
+                                                    <a class="rvt-header-menu__submenu-link" href="#What we do">Our Activities</a>
                                                 </li>
                                                 <li class="rvt-header-menu__submenu-item">
                                                     <a class="rvt-header-menu__submenu-link" href="#Highlights">Recent Highlights</a>
@@ -102,34 +103,14 @@
                                     </div>
                                 </li>
                                 <li class="rvt-header-menu__item">
-                                    <a class="rvt-header-menu__link" href="#Meet Our Officers">Officers</a>
+                                    <a class="rvt-header-menu__link" href="#Meet Our Officers">Challenge</a>
                                 </li>
                                 <li class="rvt-header-menu__item">
-                                    <a class="rvt-header-menu__link" href="#Resources">Resources</a>
-                                </li>
-                                <li class="rvt-header-menu__item">
-                                    <a class="rvt-header-menu__link" href="#Contact">Contact</a>
+                                    <a class="rvt-header-menu__link" href="#Resources">Portfolios</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                <!-- Search -->
-                <div data-rvt-disclosure="search" data-rvt-close-click-outside>
-                    <!-- Button that shows/hides the search field -->
-                    <button class="rvt-global-toggle" data-rvt-disclosure-toggle="search" aria-expanded="false">
-                    <span class="rvt-sr-only">Search</span>
-                    <svg class="rvt-global-toggle__search" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">  <path d="M7 2a5 5 0 1 0 0 10A5 5 0 0 0 7 2ZM0 7a7 7 0 1 1 12.606 4.192l3.101 3.1-1.414 1.415-3.1-3.1A7 7 0 0 1 0 7Z"/></svg>
-                    </button>
-                    <!-- Search field -->
-                    <form action="/search" class="rvt-header-global__search" data-rvt-disclosure-target="search" role="search" method="get" hidden>
-                    <label class="rvt-sr-only" for="search">Search</label>
-                    <div class="rvt-input-group">
-                        <input id="search" class="rvt-input-group__input rvt-text-input" type="text" name="q">
-                        <div class="rvt-input-group__append">
-                        <button class="rvt-button">Search</button>
-                        </div>
-                    </div>
-                    </form>
                 </div>
             </div>
         </div>
@@ -156,11 +137,11 @@
         <!-- Hero Content -->
         <div class="hero-content">
             <div>          
-                <h2 class="hero-title">Association for Computing Machinery Chapter</h2>           
+                <h2 class="hero-title">Association for Computing Machinery</h2>           
             </div>
         
         <!-- Buttons -->
-        <div class="button-group">
+        <div class="button-group" style="gap: 2rem;">
             <a href="https://titanatlas.iusb.edu/organization/acmchapter" target="_blank" rel="noopener noreferrer" class="rvt-button--crimson">
             Join Us
             </a>
@@ -170,7 +151,6 @@
         </div>
     </div>
 </div>
-
 
     
     <!-- **********************************************************************
@@ -191,25 +171,29 @@
                 <!-- Who We Are -->
                 <div class="rvt-cols-6-md rvt-flex">
                     <div class="rvt-card--raised">
-                        <div class="rvt-card__body rvt-text-center ">
-                            <div class="rvt-card__image rvt-m-top-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" 
-                                    viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2" 
-                                    stroke-linecap="round" stroke-linejoin="round" 
-                                    class="lucide lucide-users">
-                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                                    <path d="M16 3.128a4 4 0 0 1 0 7.744"/>
-                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                                    <circle cx="9" cy="7" r="4"/>
-                                </svg>
-                            </div>
-                            <div class="rvt-flow rvt-m-top-xs">
-                                <h2 class="rvt-c-card-grid__title rvt-color-crimson-500">
-                                    Who We Are
-                                </h2>
-                                <div class="rvt-card__content rvt-flow rvt-p-bottom-md"> 
-                                    <p>We are a student-run organization, dedicated to promoting computer science and informatics education, fostering innovation, and connecting students with industry professionals.</p>
+                        <div class="rvt-card__body"
+                             style="margin: 1.5rem;">
+                            <div class="rvt-flex rvt-items-center">
+                                <!--Icon-->
+                                <div class="rvt-card__image rvt-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" 
+                                        viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2" 
+                                        stroke-linecap="round" stroke-linejoin="round" 
+                                        class="lucide lucide-users">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                        <path d="M16 3.128a4 4 0 0 1 0 7.744"/>
+                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                                        <circle cx="9" cy="7" r="4"/>
+                                    </svg>
                                 </div>
+                                <!--Title-->
+                                <h3 class="rvt-card__title rvt-p-lr-md">
+                                    Who We Are
+                                </h3>
+                            </div>
+                            <!--Description-->
+                            <div class="rvt-card__content rvt-flow">
+                                <p>A community of students who love to create, explore, and push what’s possible in computing. We bring together makers, innovators, and learners united by curiosity and a drive to grow.</p>
                             </div>
                         </div>
                     </div>
@@ -218,30 +202,34 @@
                 <!-- Our Mission -->
                 <div class="rvt-cols-6-md rvt-flex">
                     <div class="rvt-card rvt-card--raised">
-                        <div class="rvt-card__body rvt-text-center">
-                            <div class="rvt-card__image rvt-m-top-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" 
-                                    viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2" 
-                                    stroke-linecap="round" stroke-linejoin="round" 
-                                    class="lucide lucide-target">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <circle cx="12" cy="12" r="6"/>
-                                    <circle cx="12" cy="12" r="2"/>
-                                </svg>
-                            </div>
-                            <div class="rvt-flow rvt-m-top-xs">
-                                <h2 class="rvt-c-card-grid__title rvt-color-crimson-500">
+                        <div class="rvt-card__body"
+                             style="margin: 1.5rem;">
+                            <div class="rvt-flex rvt-items-center">
+                                <!--Icon-->
+                                <div class="rvt-card__image rvt-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" 
+                                        viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2" 
+                                        stroke-linecap="round" stroke-linejoin="round" 
+                                        class="lucide lucide-target">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <circle cx="12" cy="12" r="6"/>
+                                        <circle cx="12" cy="12" r="2"/>
+                                    </svg>
+                                </div>
+                                <!--Title-->
+                                <h3 class="rvt-card__title rvt-p-lr-md">
                                     Our Mission
-                                </h2>
-                            <div class="rvt-card__content rvt-flow rvt-p-bottom-md">
-                                <p>To provide students with opportunities for professional development, technical skill enhancement, and meaningful connections in the computing field.</p>
+                                </h3>
+                            </div> 
+                            <!--Description-->  
+                            <div class="rvt-card__content rvt-flow">
+                                <p>To make technical growth accessible, inspiring, and community-driven. We believe students learn best when they have the space, support, and tools to experiment and build together.</p>
                             </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -250,70 +238,25 @@
     <!-- **********************************************************
         Gallery
     *********************************************************** -->
-    <div class="rvt-bg-black-000 rvt-p-top-sm rvt-p-bottom-xl">
+    <div class="rvt-bg-black-000 rvt-p-top-lg rvt-p-bottom-xl">
         <div class="rvt-container-lg">
             
-            
-            <div class="gallery-wrapper">
-            <!-- Left Arrow (hidden initially) -->
-            <button class="gallery-btn gallery-btn--left" aria-label="Previous photo">
-                &#10094;
-            </button>
+            <div class="gallery-wrapper rvt-p-top-sm">
+                <!-- Left Arrow (hidden initially) -->
+                <button class="gallery-btn gallery-btn--left" aria-label="Previous photo">
+                    &#10094;
+                </button>
 
-            <div class="gallery-window">
-                <div class="rvt-row rvt-row--loose gallery-track">
-                    <!-- **********************************************************
-                        Photo 1
-                    *********************************************************** -->
-                    <div class="rvt-cols-3-md [ rvt-flex rvt-m-tb-lg rvt-m-top-xxl-md-up ]">
-                        <div class="rvt-card rvt-card--raised rvt-card--clickable">
-                            <div class="rvt-card__image">
-                                <img src="images/6.png"  alt="">
-                            </div>
-                        </div>
+                <div class="gallery-window">
+                    <div class="gallery-track" id="galleryTrack">
+                        <!--Galley Items via script-->
                     </div>
-
-                    <!-- **********************************************************
-                        Photo 2
-                    *********************************************************** -->
-                    <div class="rvt-cols-3-md [ rvt-flex rvt-m-tb-lg rvt-m-top-xxl-md-up ]">
-                        <div class="rvt-card rvt-card--raised rvt-card--clickable">
-                            <div class="rvt-card__image">
-                                <img src="images/7.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- **********************************************************
-                        Photo 3
-                    *********************************************************** -->
-                    <div class="rvt-cols-3-md [ rvt-flex rvt-m-tb-lg rvt-m-top-xxl-md-up ]">
-                        <div class="rvt-card rvt-card--raised rvt-card--clickable">
-                            <div class="rvt-card__image">
-                                <img src="images/8.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- **********************************************************
-                        Photo 4
-                    *********************************************************** -->
-                    <div class="rvt-cols-3-md [ rvt-flex rvt-m-tb-lg rvt-m-top-xxl-md-up ]">
-                        <div class="rvt-card rvt-card--raised rvt-card--clickable">
-                            <div class="rvt-card__image">
-                                <img src="images/10.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    
                 </div>
-            </div>
 
-            <!-- Right Arrow -->
-            <button class="gallery-btn gallery-btn--right" aria-label="Next photo">
-                &#10095;
-            </button>
+                <!-- Right Arrow -->
+                <button class="gallery-btn gallery-btn--right" aria-label="Next photo">
+                    &#10095;
+                </button>
             </div>
         </div>
     </div>
@@ -329,11 +272,7 @@
                     <img src="images/funguys.png" alt="Will and Q">
                 </div>
                 <div class="rvt-billboard__body">
-                    <h1 class="rvt-billboard__eyebrow">  </h1>
-                    <h1 class="rvt-billboard__eyebrow">  </h1>
-                    <h1 class="rvt-billboard__eyebrow">  </h1>
-                    <h3 class="rvt-billboard__eyebrow">  </h3>
-                    <h2 class="rvt-billboard__title">Upcoming Events</h2>
+                    <h2 class="rvt-billboard__title" style="margin-top: 6rem;">Upcoming Events</h2>
                     <div class="rvt-billboard__content [ rvt-flow ]">
                         <p>Stay updated with our latest events, workshops, and meetings. Don't miss out on opportunities to learn, network, and grow with us!</p>
                         <a class="rvt-cta" href="https://titanatlas.iusb.edu/organization/acmchapter/events">
@@ -477,7 +416,7 @@
                             </div>
                             <!--Description-->
                             <div class="rvt-p-top-lg rvt-flow rvt-color-white rvt-m-lr-xs">
-                                <p>Collaborative learning, peer mentoring sessions, and hackathon prep.</p>        
+                                <p>Workshops, peer mentoring, and hackathon prep.</p>        
                             </div>
                         </div>
                     </div>
@@ -588,7 +527,7 @@
                             </div>
                             <!--Description-->
                             <div class="rvt-card__content rvt-flow rvt-text-left rvt-m-lr-xs">
-                                <p>Join our multi-campus team in the development of an AI-driven VR Therapy Mental Health Application</p>        
+                                <p>Join our multi-campus team building an AI VR therapy app</p>        
                             </div>
                         </div>
                     </div>
@@ -1098,11 +1037,13 @@
 
                     <div class="rvt-width-xxl rvt-card--raised rvt-card--clickable ">
                         <div class="rvt-p-left-xl rvt-m-top-md rvt-card__body ">     
-                            <div class="rvt-flex rvt-flex-align-center rvt-gap-xs ">
+
+                            <div class="rvt-flex rvt-flex-align-center rvt-gap-sm ">
                                 <rvt-icon name="link-external" class="rvt-color-crimson" aria-hidden="true"></rvt-icon>
                                 <a href="https://titanatlas.iusb.edu/organization/acmchapter" target="_blank" class="rvt-link-bold">Titan Atlas</a>
                             </div>
-                            <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
+
+                            <div class="rvt-flex rvt-flex-align-center rvt-gap-sm rvt-m-top-sm">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
                                     viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" 
@@ -1111,10 +1052,10 @@
                                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                                     <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
                                 </svg>
-                                
                                 <a href="https://www.instagram.com/acmiusb/" target="_blank" class="rvt-link-bold">Instagram</a></li>
                             </div>
-                            <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
+
+                            <div class="rvt-flex rvt-flex-align-center rvt-gap-sm rvt-m-top-sm">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
                                     viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2" 
                                     stroke-linecap="round" stroke-linejoin="round" 
@@ -1126,11 +1067,13 @@
                                 </svg>
                                 <a href="https://discord.com/channels/1417285325079842971/1417544727636480171" target="_blank" class="rvt-link-bold">Discord Server</a>
                             </div>  
-                            <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
+
+                            <div class="rvt-flex rvt-flex-align-center rvt-gap-sm rvt-m-top-sm">
                                 <rvt-icon name="link-external" class="rvt-color-crimson" aria-hidden="true"></rvt-icon>
                                 <a href="https://iu.instructure.com/enroll/H9YMG6" target="_blank" class="rvt-link-bold">Canvas Course</a>
-                            </div>   
-                            <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
+                            </div>  
+
+                            <div class="rvt-flex rvt-flex-align-center rvt-gap-sm rvt-m-top-sm">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
                                     viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2" 
                                     stroke-linecap="round" stroke-linejoin="round" 
@@ -1139,8 +1082,9 @@
                                     <path d="M9 18c-4.51 2-5-2-7-2"/>
                                 </svg>
                                 <a href="#" target="_blank" class="rvt-link-bold">GitHub Organization</a>
-                            </div>    
-                            <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
+                            </div>  
+
+                            <div class="rvt-flex rvt-flex-align-center rvt-gap-sm rvt-m-top-sm">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
                                     viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2" 
                                     stroke-linecap="round" stroke-linejoin="round" 
@@ -1183,11 +1127,9 @@
                 </button>
             </h3>
         <div class="rvt-accordion__panel" data-rvt-accordion-panel>
-            <p class="rvt-m-all-remove">The club is called the ACM Chapter because it’s a local branch of the Association for Computing Machinery (ACM) 
-                — the world’s largest and most recognized organization for computing professionals and students. 
-                Being an ACM CHAPTER means our club is officially affiliated with ACM and shares its mission: to advance computing as a science and a profession. 
-                The name reflects that we’re part of a global network of innovators, researchers, 
-                and students who are passionate about computer science, programming, and technology.</p>
+            <p class="rvt-m-all-remove">We’re called an ACM Chapter because we’re a local home for the Association for Computing Machinery, 
+                which is the world's biggest community for tech pros and students. Being an official 'chapter' means we’re plugged into a huge global network of researchers and developers. 
+                It’s our way of bringing the best of the computer science world right here to our campus for anyone who loves coding and technology.</p>
         </div>
         <h3 class="rvt-accordion__summary">
             <button class="rvt-accordion__toggle" data-rvt-accordion-trigger>
@@ -1203,8 +1145,8 @@
             </button>
         </h3>
         <div class="rvt-accordion__panel" data-rvt-accordion-panel>
-            <p class="rvt-m-all-remove">You can become a member by joining the ACM Chapter on Titan Atlas! It's free — no fee!</p>
-            <p class="rvt-m-all-remove">The only requirement is curiousity about Computer Science, Informatics, Physics, Math, and related topics :)</p>
+            <p class="rvt-m-all-remove">You can become a member by joining the ACM Chapter on Titan Atlas! It's free... no fee!</p>
+            <p class="rvt-m-all-remove">The only requirement is curiousity about Computer Science, Informatics, Physics, Math, and related topics ;)</p>
         </div>
         </div>
     </div>
@@ -1359,6 +1301,168 @@
         </div>
     </div>
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const images = [
+    "images/6.png",
+    "images/7.png",
+    "images/8.png",
+    "images/10.jpg",
+    "images/1.png",
+    "images/2.jpg",
+    "images/3.jpg",
+    "images/4.jpg"
+  ];
+
+  const container = document.getElementById("galleryContainer");
+  const track = document.getElementById("galleryTrack");
+  const nextBtn = document.querySelector(".gallery-btn--right");
+  const prevBtn = document.querySelector(".gallery-btn--left");
+
+  const visible = 4; // images visible
+  const step = 2;    // images to move per click
+  let index = visible; // start after prepended clones
+
+  // --- CREATE CLONES FOR INFINITE LOOP ---
+  const total = images.length;
+
+  // Prepend clones of last `visible` images
+  for (let i = total - visible; i < total; i++) {
+    const div = document.createElement("div");
+    div.className = "gallery-item";
+    div.innerHTML = `<img src="${images[i]}" alt="">`;
+    track.appendChild(div); // we append temporarily, will reorder later
+  }
+
+  // Add real images
+  images.forEach(src => {
+    const div = document.createElement("div");
+    div.className = "gallery-item";
+    div.innerHTML = `<img src="${src}" alt="">`;
+    track.appendChild(div);
+  });
+
+  // Append clones of first `visible` images
+  for (let i = 0; i < visible; i++) {
+    const div = document.createElement("div");
+    div.className = "gallery-item";
+    div.innerHTML = `<img src="${images[i]}" alt="">`;
+    track.appendChild(div);
+  }
+
+  // --- UPDATE FUNCTION ---
+  function update(animate = true) {
+    track.style.transition = animate ? "transform 0.4s ease" : "none";
+    track.style.transform = `translateX(-${(index * 100) / visible}%)`;
+  }
+
+  // --- MOVE FUNCTION WITH LOOPING ---
+  function move(dir) {
+    index += dir * step;
+    update(true);
+
+    setTimeout(() => {
+      // Snap when reaching cloned edges
+      if (index >= total + visible) { // past last clone
+        index = visible;
+        update(false);
+      }
+      if (index < visible) { // before first clone
+        index = total + visible - step;
+        update(false);
+      }
+    }, 410); // match transition duration
+  }
+
+  // --- BUTTON LISTENERS ---
+  nextBtn.addEventListener("click", () => move(1));
+  prevBtn.addEventListener("click", () => move(-1));
+
+  // --- DRAG / SWIPE SUPPORT ---
+  let startX = 0;
+  let lastX = 0;
+  let deltaX = 0;
+  let dragging = false;
+  let dragStarted = false;
+
+  const DRAG_THRESHOLD = 8; // px before drag activates
+
+  // Width of one gallery item including padding
+  const itemWidth = track.querySelector(".gallery-item").offsetWidth;
+
+  track.addEventListener("pointerdown", e => {
+    startX = e.clientX;
+    lastX = e.clientX;
+    deltaX = 0;
+    dragging = true;
+    dragStarted = false;
+
+    track.setPointerCapture(e.pointerId);
+    track.style.transition = "none";
+  });
+
+  track.addEventListener("pointermove", e => {
+    if (!dragging) return;
+
+    deltaX = e.clientX - startX;
+
+    // do not start drag until threshold crossed
+    if (!dragStarted) {
+      if (Math.abs(deltaX) < DRAG_THRESHOLD) return;
+      dragStarted = true;
+      container.classList.add("dragging");
+    }
+
+    // move relative to current index
+    track.style.transform = `translateX(calc(-${(index * 100) / visible}% + ${deltaX}px))`;
+  });
+
+  track.addEventListener("pointerup", () => {
+    if (!dragging) return;
+
+    dragging = false;
+    container.classList.remove("dragging");
+
+    // If user never crossed threshold, treat as click
+    if (!dragStarted) {
+        update(true);
+        return;
+    }
+
+  // Determine steps moved
+  const movedSteps = Math.round(deltaX / itemWidth);
+  index -= movedSteps;
+
+  // Infinite loop correction
+  if (index >= images.length + visible) index = visible;
+  if (index < visible) index = images.length + visible - step;
+
+  update(true);
+
+  deltaX = 0;
+});
+
+  // --- KEYBOARD SUPPORT ---
+  function isGalleryInView() {
+    const rect = track.getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom > 0;
+  }
+
+  document.addEventListener("keydown", e => {
+    if (!isGalleryInView()) return;
+    if (e.key === "ArrowRight") move(1);
+    if (e.key === "ArrowLeft") move(-1);
+  });
+
+  // --- INITIAL POSITION ---
+  update(false);
+
+});
+</script>
+
+
+
 <script src="itsalive.js"></script>
 <script src="https://unpkg.com/rivet-core@2.9.0/js/rivet.min.js"></script>
 <script>
