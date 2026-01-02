@@ -3,10 +3,16 @@
 View our website here: https://tania-krauch.github.io/ACM-Chapter-Website/
 
 ### PRIMARY
-## Weekly Challenge Page
-## Portfolio Page
 
-### SECONDAARY CONCERN
+## Weekly Challenge Page
+- ...
+- 
+## Portfolio Page
+- ...
+
+
+### SECONDARY
+
 ## UI / Design Improvements
 
 - Hero Section (Top Banner)
