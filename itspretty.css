@@ -278,10 +278,11 @@ video, .video {
 
 
 /* ========== RESPONSIVE ========== */
-@media (min-width: 640px) {
+@media (max-width: 640px) { /* Changed min-width --> max-width for mobile view */
   .button-group {
     flex-direction: row;
   }
+
   .hero-subtitle {
     font-size: 1.75rem;
   }
@@ -291,6 +292,22 @@ video, .video {
   .hero-title {
     font-size: 5rem;
   }
+
+  /*Li's Quote Section*/
+  #quote {
+    font-size: 1.5rem !important;
+  }
+
+  #quote-container {
+    margin-right: 0 !important;
+  }
+
+  #Li-Will-img {
+    max-height: 55vh; 
+    width: auto; 
+    margin: 0 auto;
+  }
+
 }
 
 @media (min-width: 768px) {
