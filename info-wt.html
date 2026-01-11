@@ -4,19 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex">
-  <title>ACM Projects</title>
-  <link href="https://assets.iu.edu/favicon.ico" rel="shortcut icon" type="image/x-icon">
-
-  <link rel="stylesheet" href="itspretty.css"/>
-
+  <title>Website Team</title>
   <link rel="stylesheet" href="https://unpkg.com/rivet-core@2.9.0/css/rivet.min.css">
   <link rel="stylesheet" href="https://unpkg.com/rivet-stickers@0.3.1/dist/rivet-sticker-element.css">
   <script type="module" src="https://unpkg.com/rivet-stickers@0.3.1/dist/rivet-stickers.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/rivet-icons@3.0.1/dist/rivet-icon-element.css">
-  <script type="module" src="https://unpkg.com/rivet-icons@3.0.1/dist/rivet-icons.js"></script>
-  
 </head>
-
 <body class="rvt-layout">
 
 <!-- **************************************************************************
@@ -117,160 +109,71 @@
     Main content area
 *************************************************************************** -->
 
-<main id="main-content" class="rvt-layout__wrapper" id="main-content">
+<main id="main-content" class="rvt-layout__wrapper rvt-layout__wrapper--single rvt-container-sm">
+    <div class="rvt-layout__content">
 
-    <!-- **********************************************************************
-        Page title and summary
-    *********************************************************************** -->
+        <!-- ******************************************************************
+            Breadcrumb navigation
+        ******************************************************************* -->
+        
+        <nav class="rvt-flex rvt-items-center" role="navigation" aria-label="Breadcrumb">
+            <ol class="rvt-breadcrumbs rvt-grow-1">
+                <li>
+                    <a href="index.html">
+                        <span class="rvt-sr-only">Home</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">  <path d="m8 .798 7 4.667V15H9v-4.444H7V15H1V5.465L8 .798ZM3 6.535V13h2V8.556h6V13h2V6.535L8 3.202 3 6.535Z"/></svg>
+                    </a>
+                </li>
+                <li><a href="projects.html">Opportunities</a></li>
+                <li><a href="info.html">Website Team</a></li>
+            </ol>
+            <a class="rvt-hide-md-up rvt-text-regular rvt-ts-14 rvt-inline-flex rvt-items-center rvt-p-tb-xxs rvt-p-lr-xs rvt-link-bold rvt-border-radius rvt-bg-blue-000 rvt-shrink-0" href="#section-nav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">  <path d="M7 1v10.844L2.146 7.737.854 9.263 8 15.31l7.146-6.047-1.292-1.526L9 11.844V1H7Z"/></svg>
+                <span class="rvt-m-left-xs">Section navigation</span>
+            </a>
+        </nav>
 
-    <div class="rvt-bg-crimson rvt-p-tb-xl rvt-p-tb-xxl-md-up">
-        <div class="rvt-container-sm rvt-prose rvt-flow rvt-text-center">
-            <h1 class="rvt-color-white">Think together. Build tomorrow.</h1>
-            <p class="rvt-ts-20 rvt-color-white ">Develop the skills you need for a rewarding career.</p>
+        <!-- ******************************************************************
+            Page title and summary
+        ******************************************************************* -->
+
+        <div class="rvt-m-top-xxl rvt-m-top-md-md-up rvt-flow rvt-prose">
+            <h1>Join the ACM Website Team</h1>
+            <p class="rvt-ts-20 rvt-color-black-500">Blah blah blah</p>
         </div>
-    </div>
-
-    <!-- **********************************************************************
-        Filters
-    *********************************************************************** -->
-
-    <div class="rvt-container-lg rvt-p-top-lg">
-        <ul class="rvt-list-reset rvt-flex rvt-wrap rvt-justify-center rvt-p-bottom-lg rvt-border-bottom">
-            <li class="rvt-m-right-xs">
-                <a href="#0" class="rvt-badge rvt-badge--secondary">All</a>
-            </li>
-            <li class="rvt-m-right-xs" id="News">
-                <a href="#0" class="rvt-badge rvt-badge--secondary">Club News</a>
-            </li>
-            <li class="rvt-m-right-xs">
-                <a href="#0" class="rvt-badge rvt-badge--secondary">Project</a>
-            </li>
-            <li class="rvt-m-right-xs">
-                <a href="#0" class="rvt-badge rvt-badge--secondary">Research</a>
-            </li>
-            <li class="rvt-m-right-xs">
-                <a href="#0" class="rvt-badge rvt-badge--secondary">Contest</a>
-            </li>
-        </ul>
-    </div>
-
-    <!-- **********************************************************************
-        Card list
-    *********************************************************************** -->
-
-    <div class="rvt-container-lg rvt-p-tb-xl">
-        <ul class="rvt-row rvt-row--loose">
-
-            <!-- **************************************************************
-                Card
-            *************************************************************** -->
-
-            <li class="rvt-cols-6-md rvt-cols-4-lg [ rvt-flex rvt-m-bottom-xxl ]">
-                <div class="rvt-card rvt-card--clickable">
-                    <div class="rvt-card__image">
-                        <img src="images/brain.jpg" alt="IU Memorial Stadium with fans in stands under a clear blue sky" loading="lazy">
-                    </div>
-                    <div class="rvt-card__body">
-                        <div class="rvt-card__eyebrow">Research</div>
-                        <h2 class="rvt-card__title">
-                            <a href="info-bc.html">Schizophrenia BCI</a>
-                        </h2>
-                        <div class="rvt-card__content [ rvt-flow ]">
-                            <p>Join our multi-campus team building an Brain-Computer Interface AI VR therapy app</p>
-                        </div>
-                        <div class="rvt-card__meta">
-                            <time>Dec 6, 2025</time>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <!-- **************************************************************
-                Card
-            *************************************************************** -->
-
-            <li class="rvt-cols-6-md rvt-cols-4-lg [ rvt-flex rvt-m-bottom-xxl ]">
-                <div class="rvt-card rvt-card--clickable">
-                    <div class="rvt-card__image">
-                        <img src="images/laptop.jpg" alt="Replace this value with appropriate alternative text" loading="lazy">
-                    </div>
-                    <div class="rvt-card__body">
-                        <div class="rvt-card__eyebrow">Club News</div>
-                        <h2 class="rvt-card__title">
-                            <a href="info-wt.html">Join the Website Team</a>
-                        </h2>
-                        <div class="rvt-card__content [ rvt-flow ]">
-                            <p>Develop puzzles for our Weekly Challenge and help us make this website better :)</p>
-                        </div>
-                        <div class="rvt-card__meta">
-                            <time>Jan 12, 2026</time>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <!-- **************************************************************
-                Card
-            *************************************************************** -->
-
-            <li class="rvt-cols-6-md rvt-cols-4-lg [ rvt-flex rvt-m-bottom-xxl ]">
-                <div class="rvt-card rvt-card--clickable">
-                    <div class="rvt-card__image">
-                        <img src="images/monkey.jpg" alt="Replace this value with appropriate alternative text" loading="lazy">
-                    </div>
-                    <div class="rvt-card__body">
-                        <div class="rvt-card__eyebrow">Club News</div>
-                        <h2 class="rvt-card__title">
-                            <a href="info-mt.html">Join the ACM Meda Team</a>
-                        </h2>
-                        <div class="rvt-card__content [ rvt-flow ]">
-                            <p>Um</p>
-                        </div>
-                        <div class="rvt-card__meta">
-                            <time>Jan 12, 2026</time>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
+        
+        <!-- ******************************************************************
+            Content
+        ******************************************************************* -->
+        
+        <div class="rvt-prose rvt-flow rvt-border-top rvt-p-top-lg rvt-m-top-xl">
             
-        </ul>
-    </div>
+            <!-- **************************************************************
+                Feature slot
+            *************************************************************** -->
+            
+            <div class="rvt-layout__feature-slot">
+                <div class="rvt-card rvt-card--raised">
+                    <div class="rvt-card__body">
+                        <span class="rvt-ts-18 rvt-text-bold">Find your calling</span>
+                        <p>Blah blah blah.</p>
+                        <a href="#0" class="rvt-cta">Connect with the Team</a>
+                    </div>
+                </div>
+            </div>
 
-    <!-- **********************************************************************
-        Pagination
-    *********************************************************************** -->
+            <!-- **************************************************************
+                Running text
+            *************************************************************** -->
+            
+            <p>Blah blah blah <strong>blah</strong>. Blah blah blah.</p>
+            <h2>Blah blah blah</h2>
+            <p>Blah blah blah.</p>
+             <ul>
+                <li>Student government</li>
+            </ul>
+            <a href="#0" class="rvt-cta">Try blank</a>
 
-    <div class="rvt-container-lg">
-        <div class="rvt-p-bottom-xxl rvt-flex rvt-justify-center">
-            <nav role="navigation" aria-label="Default results pages">
-                <ul class="rvt-pagination">
-                    <li class="rvt-pagination__item is-disabled">
-                        <a href="#0" aria-label="Previous set of pages">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">  <path d="M9.737.854 3.69 8l6.047 7.146 1.526-1.292L6.31 8l4.953-5.854L9.737.854Z"/></svg>
-                            <span class="rvt-sr-only">Previous</span>
-                        </a>
-                    </li>
-                    <li class="rvt-pagination__item">
-                        <a href="#0" aria-label="Page 1">1</a>
-                    </li>
-                    <li class="rvt-pagination__item">
-                        <a href="#0" aria-current="page">2</a>
-                    </li>
-                    <li class="rvt-pagination__item">
-                        <a href="#0" aria-label="Page 3">3</a>
-                    </li>
-                    <li class="rvt-pagination__item">
-                        <a href="#0" aria-label="Page 4">4</a>
-                    </li>
-                    <li class="rvt-pagination__item">
-                        <a href="#0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">  <path d="M6.263 15.146 12.31 8 6.263.854 4.737 2.146 9.69 8l-4.953 5.854 1.526 1.292Z"/></svg>
-                            <span class="rvt-sr-only">Next set of pages</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </div>
 </main>
