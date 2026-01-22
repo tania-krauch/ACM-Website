@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex">
+  <meta name="author" content="Tatsiana Krauchonak">
   <title>Schizophrenia Research</title>
+  <link href="https://assets.iu.edu/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link rel="stylesheet" href="https://unpkg.com/rivet-core@2.9.0/css/rivet.min.css">
   <link rel="stylesheet" href="https://unpkg.com/rivet-stickers@0.3.1/dist/rivet-sticker-element.css">
   <script type="module" src="https://unpkg.com/rivet-stickers@0.3.1/dist/rivet-stickers.js"></script>
@@ -138,11 +140,203 @@
         ******************************************************************* -->
 
         <div class="rvt-m-top-xxl rvt-m-top-md-md-up rvt-flow rvt-prose">
-            <h1>! Our research is currently under consideration for publication</h1>
+            <h1>Using Brain Signals and AI to Better Understand Schizophrenia</h1>
+            <p class="rvt-ts-20 rvt-color-black-500">How Deep Learning Is Changing Mental Health Research</p>
         </div>
         
+        <!-- **************************************************************
+            Author
+        *************************************************************** -->
+        <div class=" rvt-border-top rvt-m-top-lg-md-up rvt-p-bottom-sm">
+            <div class="rvt-container-md rvt-p-top-sm">
+                <div class="rvt-flex-md-up rvt-items-center-md-up"> 
+                    <div class="rvt-card__image rvt-flex rvt-justify-center rvt-m-right-md-md-up">
+                        <img src="images/acm-gr.png" alt="Cuitlo" style="width:35px; height:35px; object-fit:cover; border-radius:50%;">
+                    </div>  
+                    
+                    <div class="rvt-prose rvt-flow">
+                        <h4>Samiksha BC, Tatsiana Krauchonak, Lucas Carpenter et al</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="rvt-border-top"></div>
+
         
+        <!-- ******************************************************************
+            Content
+        ******************************************************************* -->
+        
+        <div class="rvt-prose rvt-flow rvt-m-top-xl">
             
+            <!-- **************************************************************
+                Feature slot
+            *************************************************************** -->
+            
+            <div class="rvt-layout__feature-slot">
+                <div class="rvt-card rvt-card--raised">
+                    <div class="rvt-card__body">
+                        <span class="rvt-ts-18 rvt-text-bold">
+                            <a href="https://www.preprints.org/manuscript/202601.0860" class="rvt-cta">Read the Full Research Article</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- **************************************************************
+                Running text
+            *************************************************************** -->
+            
+            <p>Schizophrenia is a complex neurological disorder that affects how people think, perceive reality, and interact with the world. 
+                Diagnosing it is difficult because symptoms vary widely between individuals and often overlap with other mental health conditions. 
+                Traditionally, diagnosis relies on behavioral observation and patient self-reports, which can be subjective and inconsistent.
+            </p>
+            <p>What if brain activity itself could help doctors detect schizophrenia more accurately?</p>
+            <p>That question is at the heart of recent research exploring the use of electroencephalography (EEG) 
+                and machine learning to identify schizophrenia-related patterns in brain signals. 
+                The paper “Deep Learning versus Classical Machine Learning for Schizophrenia EEG Signal Classification” investigates whether 
+                modern deep learning techniques outperform traditional machine learning approaches when analyzing EEG data.
+            </p>
+            <p>The results suggest that deep learning may be a powerful tool for improving early detection and understanding of schizophrenia.</p>
+
+            <hr>
+
+            <h2>What Is EEG and Why Does It Matter?</h2>
+            <p>EEG is a non-invasive technique that measures electrical activity in the brain using electrodes placed on the scalp. 
+                These signals reflect how neurons communicate and are often used to study sleep, epilepsy, attention, and neurological disorders.
+            </p>
+            <p>EEG is especially useful for schizophrenia research because:</p>
+            <ul>
+                <li>It captures real-time brain activity</li>
+                <li>It is relatively low-cost and accessible</li>
+                <li>It can reveal subtle differences in neural patterns that are not visible through behavior alone</li>
+            </ul>
+            <p>However, EEG data is extremely complex. Raw brain signals are noisy, high-dimensional, and difficult to interpret manually. 
+                This is where machine learning becomes essential.
+            </p>
+
+            <!-- **************************************************************
+                Breakout element
+            *************************************************************** -->
+            
+            <figure class="rvt-layout__break-out">
+                <img src="images/eeg2.jpg" alt="EEG Brain">
+            </figure>
+
+
+            <h2>Classical Machine Learning vs. Deep Learning</h2>
+            <p>The paper compares two broad approaches to analyzing EEG data:</p>
+
+            <h3>1. Classical Machine Learning</h3>
+            <p>These methods require researchers to manually extract features from EEG signals before classification. 
+                Common techniques include:</p>
+            <ul>
+                <li>Support Vector Machines (SVM)</li>
+                <li>Random Forests</li>
+                <li>k-Nearest Neighbors (k-NN)</li>
+            </ul>    
+            <p>To use these models, researchers must decide in advance which signal characteristics matter, such as frequency bands or statistical measures. 
+                While effective, this approach depends heavily on human-designed features, which may miss important patterns.
+            </p>
+
+            <h3>2. Deep Learning</h3>
+            <p>Deep learning models, such as Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs), 
+                learn features automatically from raw or minimally processed data.</p>
+            <p>Instead of being told what to look for, deep learning models:</p>
+            <ul>
+                <li>Learn patterns directly from EEG signals</li>
+                <li>Capture complex, non-linear relationships</li>
+                <li>Scale better with large datasets</li>
+            </ul>    
+            <p>This makes deep learning especially promising for analyzing brain data, where important patterns may be subtle or hidden.
+            </p>
+
+            <hr>
+
+            <h2>The Dataset and Experimental Setup</h2>
+            <p>The researchers used a publicly available EEG dataset containing recordings from individuals with schizophrenia and healthy control subjects. 
+                The data was collected under different conditions to ensure diversity and realism.</p>
+            <p>Key steps in the experiment included:</p>
+            <ul>
+                <li>Preprocessing EEG signals to remove noise</li>
+                <li>Training multiple classical ML models and deep learning models</li>
+                <li>Comparing classification accuracy, robustness, and generalization</li>
+            </ul>    
+            <p>The goal was simple: Which approach can more accurately distinguish between schizophrenia and non-schizophrenia EEG signals?
+            </p>
+
+            <hr>
+
+            <h2>Key Findings</h2>
+            <p>The results were clear and consistent:</p>
+            <p>Deep learning models outperformed classical machine learning models</p>
+            <ul>
+                <li>CNN-based architectures achieved the highest classification accuracy</li>
+                <li>Deep models were better at handling variability in EEG signals</li>
+                <li>Performance remained strong across different recording conditions</li>
+            </ul>   
+            <p>Classical methods still worked, but with limitations</p>
+            <ul>
+                <li>They performed reasonably well when features were carefully engineered</li>
+                <li>However, their accuracy dropped when signal conditions changed</li>
+                <li>Feature extraction required significant domain expertise</li>
+            </ul> 
+            <p>In short, deep learning provided better performance with less manual intervention.</p>
+
+            <!-- **************************************************************
+                Breakout element
+            *************************************************************** -->
+            
+            <figure class="rvt-layout__break-out">
+                <img src="images/EEG-brain1.png" alt="Brain">
+                <figcaption>EEG brain illustration. Note. From Wireless and wearable EEG, by BIOPAC Systems, Inc. (2024), 
+                    BIOPAC Blog (https://blog.biopac.com/wireless-and-wearable-eeg)/</figcaption>
+            </figure>
+            
+
+            <h2>Why This Matters</h2>
+            <p>This research has important implications for both computer science and healthcare:</p>
+            <p>For Mental Health</p>
+            <ul>
+                <li>More objective diagnostic tools could support clinicians</li>
+                <li>Earlier and more accurate detection may improve patient outcomes</li>
+                <li>EEG-based systems could complement traditional diagnosis methods</li>
+            </ul>   
+            <p>For Students and Researchers</p>
+            <ul>
+                <li>Shows how AI can be applied to real-world medical problems</li>
+                <li>Demonstrates the advantage of deep learning for complex data</li>
+                <li>Highlights the growing role of interdisciplinary work between CS and neuroscience</li>
+            </ul> 
+            
+            <hr>
+
+            <h2>Challenges and Ethical Considerations</h2>
+
+            <p>Despite the promising results, the paper also acknowledges limitations:</p>
+            <ul>
+                <li>Deep learning models require large datasets</li>
+                <li>Interpretability remains a challenge: models can be “black boxes”</li>
+                <li>Clinical deployment would require extensive validation and ethical oversight</li>
+            </ul>   
+            
+            <p>AI should support, not replace, medical professionals.</p>
+
+            <hr>
+
+            <h2>Conclusion</h2>
+
+            <p>Deep learning has significant advantages over classical machine learning when analyzing EEG data for schizophrenia detection. 
+                By automatically learning complex patterns from brain signals, deep learning models offer a more powerful 
+                and flexible approach to mental health research.</p>
+            
+            <p>For students, this work is a compelling example of how skills in programming, machine learning, and 
+                data science can directly contribute to solving meaningful societal and medical challenges.</p>
+
+            <p>As AI continues to evolve, its role in understanding the human brain may become one of its most impactful applications.</p>
+
+        </div>
     </div>
 </main>
 
@@ -293,7 +487,7 @@
                     <a class="rvt-footer-base__link" href="#https://southbend.iu.edu/privacy/">Privacy Notice</a>
                 </li>
                 <li class="rvt-footer-base__item">
-                    <a class="rvt-footer-base__link" href="#https://www.iu.edu/copyright/index.html">Copyright</a> © 2025 The Trustees of <a class="rvt-footer-base__link" href="https://www.iu.edu">Indiana University</a>
+                    <a class="rvt-footer-base__link" href="#https://www.iu.edu/copyright/index.html">Copyright</a> © 2026 The Trustees of <a class="rvt-footer-base__link" href="https://www.iu.edu">Indiana University</a>
                 </li>
             </ul>
         </div>
