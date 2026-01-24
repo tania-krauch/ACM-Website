@@ -8,12 +8,12 @@
   <title>ACM Home</title>
   <link href="https://assets.iu.edu/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
-  <link rel="stylesheet" href="itspretty.css"/>
-
   <link rel="stylesheet" href="https://unpkg.com/rivet-core@2.9.0/css/rivet.min.css">
   <link rel="stylesheet" href="https://unpkg.com/rivet-stickers@0.3.1/dist/rivet-sticker-element.css">
   <script type="module" src="https://unpkg.com/rivet-stickers@0.3.1/dist/rivet-stickers.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/rivet-icons@3.0.1/dist/rivet-icon-element.css">
+  <link rel="stylesheet" href="itspretty.css"/> <!-- Our custom stylesheet -->
+
   <script type="module" src="https://unpkg.com/rivet-icons@3.0.1/dist/rivet-icons.js"></script>
   
 </head>
@@ -655,12 +655,12 @@
     <div class="rvt-container-lg rvt-p-top-xxl rvt-p-bottom-md">
         <div class="rvt-billboard rvt-justify-center">
             <div class="rvt-billboard__image rvt-width-xxl">
-                <img src="images/friends.jpg" alt="Li and Will">
+                <img id="Li-Will-img" src="images/friends.jpg" alt="Le Li Kruczek and Will Keeler" title="Le Li Kruczek and Will Keeler">
             </div>
-            <div class="rvt-billboard__body rvt-m-right-3-xl">
+            <div id="quote-container" class="rvt-billboard__body rvt-m-right-3-xl">
                 <div class="rvt-billboard__content rvt-flow ">
                     <div class="rvt-quote rvt-flow rvt-text-left">
-                        <div class="rvt-ts-26 rvt-font-serif">
+                        <div id="quote" class="rvt-ts-26 rvt-font-serif">
                             <p>The first time I joined an ACM meeting I felt the community and support that everyone talks about. 
                             Now, as an active member, I get to work directly with fellow students on amazing projects and watch them grow. 
                             It's a very rewarding experience.</p>
