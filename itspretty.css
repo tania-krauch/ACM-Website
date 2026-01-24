@@ -270,27 +270,25 @@ video, .video {
 .officer-bullets {
   list-style: disc;
   padding-left: 1.25rem;
-  margin: 0 0 0.5rem 0;
+  
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; 
+  ;
 }
 .officer-bullets li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.25rem; /* space in-between list items */
 }
 
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 640px) { /* Changed min-width --> max-width for mobile view */
-  .button-group {
-    flex-direction: row;
+  .hero-title {
+    font-size: 1rem;
   }
 
-  .hero-subtitle {
-    font-size: 1.75rem;
-  }
-  .hero-department {
-    font-size: 1.25rem;
-  }
-  .hero-title {
-    font-size: 5rem;
+  .officer-bullets {
+    padding-left: 5.5rem;
+    font-size: 0.875rem; /* Slightly smaller font for mobile */
   }
 
   /*Li's Quote Section*/
@@ -307,7 +305,16 @@ video, .video {
     width: auto; 
     margin: 0 auto;
   }
+}
 
+@media (min-width: 640px) { /* Changed max-width --> min-width for desktop view */
+  .button-group {
+    flex-direction: row;
+  }
+
+  .hero-title {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
