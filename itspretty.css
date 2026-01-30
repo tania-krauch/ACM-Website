@@ -308,10 +308,29 @@ video, .video {
     margin: 0 auto;
   }
 
+  /* Gallery Section */
+  .gallery-item {
+    flex: 0 0 100%; /* 1 image visible on small screens */
+    height: 55vh;
+    width: 25vw;
+    padding: 0 15vw;
+    margin: 0 auto;
+  }
+
+  .gallery-btn--left {
+    left: 10px;
+  }
+
+  .gallery-btn--right {
+    right: 10px;
+  }
+
+
 }
 
 @media (min-width: 768px) {
   .hero-content {
     padding: 3rem 2rem;
   }
+
 }

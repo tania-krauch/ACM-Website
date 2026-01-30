@@ -288,4 +288,4 @@ document.addEventListener('DOMContentLoaded', function() {
     start, stop,
     setBitSpeed(ms) { cycleMsBase = Math.max(300, +ms || 2200); }
   };
-})();
+})()});
