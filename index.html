@@ -44,17 +44,18 @@
                         <!-- **************************************************
                             Trident logo
                         *************************************************** -->
-                        <!-- ACM Logo Option
-                        <img src="images/acm-c.png"  alt="ACM Logo" width="45" height="45">
-                        --> 
+                        <!--ACM Logo-->
+                        <img src="images/acm-l.png"  alt="ACM Logo" width="45" height="45">
+                        
 
+                        <!--
                         <div class="rvt-lockup__tab">
                             <svg xmlns="http://www.w3.org/2000/svg" class="rvt-lockup__trident" viewBox="0 0 28 34">
                                 <path fill="currentColor" d="M-3.34344e-05 4.70897H8.83308V7.174H7.1897V21.1426H10.6134V2.72321H8.83308V0.121224H18.214V2.65476H16.2283V21.1426H19.7889V7.174H18.214V4.64047H27.0471V7.174H25.0614V23.6761L21.7746 26.8944H16.2967V30.455H18.214V33.8787H8.76463V30.592H10.6819V26.8259H5.20403L1.91726 23.6077V7.174H-3.34344e-05V4.70897Z"></path>
                             </svg>
                         </div>
 
-                        <!-- **************************************************
+                        **************************************************
                             Website or application title 
                         *************************************************** -->
 
@@ -103,7 +104,10 @@
                                     <a class="rvt-header-menu__link" href="challenge.html">Challenge</a>
                                 </li>
                                 <li class="rvt-header-menu__item">
-                                    <a class="rvt-header-menu__link" href="projects.html">News  &  Opportunities</a>
+                                    <a class="rvt-header-menu__link" href="projects.html">Projects</a>
+                                </li>
+                                <li class="rvt-header-menu__item">
+                                    <a class="rvt-header-menu__link" href="news.html">News</a>
                                 </li>
                             </ul>
                         </nav>
@@ -119,62 +123,144 @@
 *************************************************************************** -->
 
 <main id="main-content" class="rvt-layout__wrapper">
-        
-    <!-- **********************************************************************
-        Main    
-    *********************************************************************** -->
-    <!-- Background Image -->
-    <div class="rvt-container-lg" id="Home">
-        <!--NEED TO REPLACE WITH CODE (but mine was laggy)-->
-        <video autoplay muted loop playsinline>
-            <source src="images/mybinary2.mp4" type="video/mp4" class="rvt-width-sm">
-            Your browser does not support the video tag.
-        </video>
-        
-        <!-- Hero Content -->
-        <div class="hero-content">
-            <div>          
-                <h2 class="hero-title">Association for Computing Machinery</h2>           
-            </div>
-        
-        <!-- Buttons -->
-        <div class="button-group rvt-m-bottom-xxl" style="gap: 2rem; ">
-            <a href="https://titanatlas.iusb.edu/organization/acmchapter" target="_blank" rel="noopener noreferrer" class="rvt-button--crimson">
-            Join Us
-            </a>
-            <a href="#About Our Chapter" class="rvt-button--outline-white">
-            Learn More
-            </a>
-        </div>
-    </div>
-</div>
 
     
     <!-- **********************************************************************
-        About Us
+        Main    
     *********************************************************************** -->
 
-    <div class="rvt-p-bottom-xxl rvt-p-top-3-xl-md-up rvt-p-bottom-xxl rvt-m-bottom-xl">
-        <div class="rvt-container-lg">
-            <div class="rvt-billboard rvt-billboard--center">
-                <div class="rvt-billboard__body">
-                    <h2 class="rvt-billboard__title" id="About">About Our Chapter</h2>
+    <div id="Home">
+
+        <!-- Background -->
+        <div class="background-image">
+            <video autoplay muted loop playsinline>
+                <source src="images/blue-b.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="black-overlay"></div>
+        
+        
+        <!-- Hero Content -->
+        <div class="hero-content">
+            
+            <!-- Challenge Link -->
+            <div class="rvt-justify-center rvt-flex-align-center rvt-flex">
+                <div class="rvt-flex rvt-m-top-xl">
+                    <div class="rvt-card--raised" style="background-color: rgb(0, 0, 0); margin-top: 3rem; border-radius: 40px;">
+                        <div class="rvt-card__body">
+                            <div class="rvt-flex rvt-items-center" style="gap: 1rem;">
+                                <!--Icon-->
+                                <div class="rvt-card__image rvt-flex" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame-icon lucide-flame"><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"/></svg>
+                                </div>
+                                <!--Title-->
+                                <a class="rvt-cta" style="color: rgb(255, 255, 255); " href="challenge.html">
+                                Weekly Puzzle
+                                </a>
+                            </div>  
+                        </div>      
+                    </div>
                 </div>
             </div>
+                
+            <div>          
+                <h2 class="hero-title">Build things that matter.</h2>  
+                <h2 class="hero-subtitle">The ACM student chapter at IU South Bend</h2>         
+            </div>
+        
+            <!-- Buttons -->
+            <div class="button-group rvt-m-bottom-xxl" style="gap: 2rem;">
+                <a href="https://titanatlas.iusb.edu/organization/acmchapter" target="_blank" rel="noopener noreferrer" class="rvt-button--crimson">
+                Join Us
+                </a>
+                <a href="#About Our Chapter" class="rvt-button--outline-white">
+                What We Do
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- **********************************************************************
+        Why Join
+    *********************************************************************** -->
+    
+    <div class="rvt-p-bottom-xxl rvt-p-top-lg rvt-m-bottom-xl">
+        <div class="rvt-container-lg">      
 
             <!-- Cards -->
-            <div class="rvt-row rvt-row--loose ">
+            <div class="rvt-row rvt-justify-center rvt-row--loose ">
 
-                <!-- Who We Are -->
-                <div class="rvt-cols-6-md rvt-flex rvt-m-top-xl">
-                    <div class="rvt-card--raised">
+                <!-- Card 1 -->
+                <div class="rvt-cols-4-md rvt-flex rvt-m-top-xl" >
+                    <div class="rvt-card--raised" style="border-radius: 24px;">
+                        <div class="rvt-card__body"
+                             style="margin: 1.5rem;">
+                            <div class="rvt-flex rvt-items-center" >
+                                <!--Icon-->
+                                <div class="rvt-card__image rvt-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" 
+                                        viewBox="0 0 24 24" fill="none" stroke="#006298" stroke-width="2" 
+                                        stroke-linecap="round" stroke-linejoin="round" 
+                                        class="lucide lucide-code-icon lucide-code">
+                                        <path d="m16 18 6-6-6-6"/>
+                                        <path d="m8 6-6 6 6 6"/>
+                                    </svg>
+                                </div>
+                                <!--Title-->
+                                <h3 class="rvt-card__title rvt-p-lr-md">
+                                    Build real things
+                                </h3>
+                            </div>
+                            <!--Description-->
+                            <div class="rvt-card__content rvt-flow">
+                                <p>Work on practical ideas with people who want to learn. Just like you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="rvt-cols-4-md rvt-flex rvt-m-top-xl">
+                    <div class="rvt-card rvt-card--raised" style="border-radius: 24px;">
                         <div class="rvt-card__body"
                              style="margin: 1.5rem;">
                             <div class="rvt-flex rvt-items-center">
                                 <!--Icon-->
                                 <div class="rvt-card__image rvt-flex">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" 
-                                        viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2" 
+                                        viewBox="0 0 24 24" fill="none" stroke="#006298" stroke-width="2" 
+                                        stroke-linecap="round" stroke-linejoin="round" 
+                                        class="lucide lucide-lightbulb-icon lucide-lightbulb">
+                                        <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
+                                        <path d="M9 18h6"/>
+                                        <path d="M10 22h4"/>
+                                    </svg>
+                                </div>
+                                <!--Title-->
+                                <h3 class="rvt-card__title rvt-p-lr-md">
+                                    Think differently
+                                </h3>
+                            </div> 
+                            <!--Description-->  
+                            <div class="rvt-card__content rvt-flow">
+                                <p>Weekly puzzles and experiments designed to be fun, not intimidating.</p>
+                            </div>
+                      
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="rvt-cols-4-md rvt-flex rvt-m-top-xl">
+                    <div class="rvt-card--raised" style="border-radius: 24px;">
+                        <div class="rvt-card__body"
+                             style="margin: 1.45rem;">
+                            <div class="rvt-flex rvt-items-center">
+                                <!--Icon-->
+                                <div class="rvt-card__image rvt-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" 
+                                        viewBox="0 0 24 24" fill="none" stroke="#006298" stroke-width="2" 
                                         stroke-linecap="round" stroke-linejoin="round" 
                                         class="lucide lucide-users">
                                         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
@@ -185,47 +271,40 @@
                                 </div>
                                 <!--Title-->
                                 <h3 class="rvt-card__title rvt-p-lr-md">
-                                    Who We Are
+                                    Find your people
                                 </h3>
                             </div>
                             <!--Description-->
                             <div class="rvt-card__content rvt-flow">
-                                <p>A community of students who love to create, explore, and push what’s possible in computing. 
-                                    We bring together makers, innovators, and learners united by curiosity and a drive to grow.</p>
+                                <p>A welcoming space for all interested majors. Beginners included.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Our Mission -->
-                <div class="rvt-cols-6-md rvt-flex rvt-m-top-xl">
-                    <div class="rvt-card rvt-card--raised">
-                        <div class="rvt-card__body"
-                             style="margin: 1.5rem;">
-                            <div class="rvt-flex rvt-items-center">
-                                <!--Icon-->
-                                <div class="rvt-card__image rvt-flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" 
-                                        viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2" 
-                                        stroke-linecap="round" stroke-linejoin="round" 
-                                        class="lucide lucide-target">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <circle cx="12" cy="12" r="6"/>
-                                        <circle cx="12" cy="12" r="2"/>
-                                    </svg>
-                                </div>
-                                <!--Title-->
-                                <h3 class="rvt-card__title rvt-p-lr-md">
-                                    Our Mission
-                                </h3>
-                            </div> 
-                            <!--Description-->  
-                            <div class="rvt-card__content rvt-flow">
-                                <p>To make technical growth accessible, inspiring, and community-driven. 
-                                    We believe students learn best when they have the space, support, and tools to experiment and build together.</p>
-                            </div>
-                            </div>
-                        </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- **********************************************************************
+        Billboard 1
+    *********************************************************************** -->
+    <div class="">
+        <div class="rvt-container-lg rvt-p-top-xl rvt-p-bottom-xxl rvt-m-tb-xl ">
+            <div class="rvt-billboard rvt-billboard--reverse">
+                <div class="rvt-billboard__image rvt-width-xxl">
+                    <img src="images/funguys.png" alt="Will and Q">
+                </div>
+                <div class="rvt-billboard__body">
+                    <h2 class="rvt-billboard__title" style="margin-top: 6rem;">What we’re building</h2>
+                    <div class="rvt-billboard__content [ rvt-flow ]">
+                        <p>From playful experiments to useful campus tools, our projects are short,
+                             collaborative, and beginner-friendly.</p>
+                        <p>No experience required. Curiosity helps.</p>
+                        <a class="rvt-cta" href="projects.html">
+                        Explore projects
+                        </a>
                     </div>
                 </div>
             </div>
@@ -233,11 +312,10 @@
     </div>
 
 
-
     <!-- **********************************************************
         Gallery
     *********************************************************** -->
-    <div class="rvt-bg-black-000 rvt-p-top-lg rvt-p-bottom-xl">
+    <div class=" rvt-bg-black-000 rvt-p-top-lg rvt-p-bottom-xl">
         <div class="rvt-container-lg">
             
             <div class="gallery-wrapper rvt-p-top-sm">
@@ -260,22 +338,25 @@
         </div>
     </div>
 
-
-     <!-- **********************************************************************
+    
+    <!-- **********************************************************************
         Billboard 2
     *********************************************************************** -->
+
     <div class="">
-        <div class="rvt-container-lg rvt-p-top-xl rvt-p-bottom-xxl rvt-m-tb-xl ">
-            <div class="rvt-billboard rvt-billboard--reverse">
-                <div class="rvt-billboard__image rvt-width-xxl">
-                    <img src="images/funguys.png" alt="Will and Q">
+        <div class="rvt-container-md rvt-p-bottom-lg rvt-m-top-xxl-md-up">
+            <div class="rvt-billboard">
+                <div class="rvt-billboard__image rvt-width-xxl rvt-m-top-md">
+                    <img src="images/li2.png" alt="Le Li">
                 </div>
-                <div class="rvt-billboard__body">
-                    <h2 class="rvt-billboard__title" style="margin-top: 6rem;">Upcoming Events</h2>
+                <div class="rvt-billboard__body rvt-m-right-xxl">
+                    <h2 class="rvt-billboard__title" style="margin-top: 4rem;">Come hang out</h2>
                     <div class="rvt-billboard__content [ rvt-flow ]">
-                        <p>Stay updated with our latest events, workshops, and meetings. Don't miss out on opportunities to learn, network, and grow with us!</p>
-                        <a class="rvt-cta" href="https://titanatlas.iusb.edu/organization/acmchapter/events">
-                        View Full Calendar
+                        <p>We meet weekly to work on projects, share ideas, and help each other learn.</p>
+                        <p>Show up once. Stay if you like it.</p>
+                        
+                        <a class="rvt-cta" href="https://titanatlas.iusb.edu/organization/acmchapter">
+                        RSVP to our next event
                         </a>
                     </div>
                 </div>
@@ -283,266 +364,12 @@
         </div>
     </div>
 
-
-    <!-- **********************************************************************
-        Activities & Opportunities
-    *********************************************************************** -->
-
-    <div class="rvt-bg-black-000 rvt-p-top-3-xl ">
-        <div class="rvt-container-lg">
-            <div class="rvt-billboard rvt-billboard--center">
-                <div class="rvt-billboard__body">
-                    <h2 class="rvt-billboard__title" id="Opportunities">Activities & Opportunities</h2>
-                </div>
-            </div>
-
-            <div class="rvt-billboard__body rvt-text-center rvt-m-top-lg">
-                <span class="rvt-hero__eyebrow" id="What we do">WHAT WE DO</span>
-            </div>
-
-            <!-- Container-->
-            <div class="rvt-row rvt-justify-center">
-
-                <!-- Card 1-->
-                <div class="rvt-cols-3-md rvt-flex rvt-m-top-xl">
-                    <div class="rvt-card--raised rvt-bg-crimson-500">
-                        <div class="rvt-card__body ">
-                            <div class="rvt-flex rvt-items-center ">
-                                <!--Icon-->
-                                <div class="rvt-card__image rvt-flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" 
-                                        viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" 
-                                        stroke-linecap="round" stroke-linejoin="round" 
-                                        class="lucide lucide-code-icon lucide-code">
-                                        <path d="m16 18 6-6-6-6"/>
-                                        <path d="m8 6-6 6 6 6"/>
-                                    </svg>
-                                </div>
-                                <!--Title-->
-                                <h3 class="rvt-c-card-grid__title rvt-p-lr-md rvt-text-medium rvt-color-white">
-                                    Programming Contests
-                                </h3>
-                            </div>
-                            <!--Description-->
-                            <div class="rvt-p-top-lg rvt-flow rvt-color-white rvt-m-lr-xs">
-                                <p>Participate in competitive programming and coding challenges.</p>        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2-->
-                <div class="rvt-cols-3-md rvt-flex rvt-m-top-xl">
-                    <div class="rvt-card--raised rvt-bg-crimson-500">
-                        <div class="rvt-card__body">
-                            <div class="rvt-flex rvt-items-center">
-                                <!--Icon-->
-                                <div class="rvt-card__image rvt-flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" 
-                                        viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" 
-                                        stroke-linecap="round" stroke-linejoin="round" 
-                                        class="lucide lucide-lightbulb-icon lucide-lightbulb">
-                                        <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
-                                        <path d="M9 18h6"/>
-                                        <path d="M10 22h4"/>
-                                    </svg>
-                                </div>
-                                <!--Title-->
-                                <h3 class="rvt-c-card-grid__title rvt-p-lr-md rvt-text-medium rvt-color-white">
-                                    Projects & Research
-                                </h3>
-                            </div> 
-                            <!--Description-->  
-                            <div class="rvt-p-top-lg rvt-flow rvt-color-white rvt-m-lr-xs ">                 
-                                <p>Collaborate on projects that YOU are interested in and boost your resume.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3-->
-                <div class="rvt-cols-3-md rvt-flex rvt-m-top-xl">
-                    <div class="rvt-card--raised rvt-bg-crimson-500">
-                        <div class="rvt-card__body">
-                            <div class="rvt-flex rvt-items-center">
-                                <!--Icon-->
-                                <div class="rvt-card__image rvt-flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" 
-                                        viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" 
-                                        stroke-linecap="round" stroke-linejoin="round" 
-                                        class="lucide lucide-network-icon lucide-network">
-                                        <rect x="16" y="16" width="6" height="6" rx="1"/>
-                                        <rect x="2" y="16" width="6" height="6" rx="1"/>
-                                        <rect x="9" y="2" width="6" height="6" rx="1"/>
-                                        <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/>
-                                        <path d="M12 12V8"/>
-                                    </svg>
-                                </div>
-                                <!--Title-->
-                                <h3 class="rvt-p-lr-md rvt-text-medium rvt-color-white">
-                                    Networking Events
-                                </h3>
-                            </div>
-                            <!--Description-->
-                            <div class="rvt-p-top-lg rvt-flow rvt-color-white rvt-m-lr-xs">
-                                <p>Connect with industry professionals and fellow students.</p>        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4-->
-                <div class="rvt-cols-3-md rvt-flex rvt-m-top-xl">
-                    <div class="rvt-card--raised rvt-bg-crimson-500">
-                        <div class="rvt-card__body">
-                            <div class="rvt-flex rvt-items-center">
-                                <!--Icon-->
-                                <div class="rvt-card__image rvt-flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" 
-                                        viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" 
-                                        stroke-linecap="round" stroke-linejoin="round" 
-                                        class="lucide lucide-users">
-                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                                        <path d="M16 3.128a4 4 0 0 1 0 7.744"/>
-                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                                        <circle cx="9" cy="7" r="4"/>
-                                    </svg>
-                                </div>
-                                <!--Title-->
-                                <h3 class="rvt-c-card-grid__title rvt-p-lr-md rvt-text-medium rvt-color-white">
-                                    Study Groups & Sessions
-                                </h3>
-                            </div>
-                            <!--Description-->
-                            <div class="rvt-p-top-lg rvt-flow rvt-color-white rvt-m-lr-xs">
-                                <p>Workshops, peer mentoring, and hackathon prep.</p>        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- **********************************************************************
-        Recent Highlights
-    *********************************************************************** -->
-    <div class="rvt-bg-black-000 rvt-p-tb-xs rvt-p-bottom-xxl">
-        <div class="rvt-container-md">        
-            <div class="rvt-billboard__body rvt-flex rvt-justify-center rvt-m-top-xxl">
-                <span class="rvt-hero__eyebrow rvt-display-block" id="Highlights">RECENT HIGHLIGHTS</span>
-            </div>
-        
-
-            <!-- Container-->
-            <div class="rvt-row rvt-justify-center">
-                <!-- Card 1-->
-                <div class="rvt-cols-4-md rvt-flex rvt-m-top-xl">
-                    <div class="rvt-card rvt-card--raised">
-                        <div class="rvt-card__body">
-                            <div class="rvt-flex rvt-items-center">
-                                <!--Icon-->
-                                <div class="rvt-card__image rvt-flex" aria-hidden="true">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
-                                        viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2" 
-                                        stroke-linecap="round" stroke-linejoin="round" 
-                                        class="lucide lucide-trophy-icon lucide-trophy">
-                                        <path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/>
-                                        <path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/>
-                                        <path d="M18 9h1.5a1 1 0 0 0 0-5H18"/>
-                                        <path d="M4 22h16"/>
-                                        <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/>
-                                        <path d="M6 9H4.5a1 1 0 0 1 0-5H6"/>
-                                    </svg>
-                                </div>
-                                <!--Title-->
-                                <h3 class="rvt-card__title rvt-ts-sm rvt-p-lr-md">
-                                    <a href="info-bc.html">Schizophrenia BCI Research</a>
-                                </h3>
-                            </div>
-                            <!--Description-->
-                            <div class="rvt-card__content rvt-flow rvt-text-left rvt-m-lr-xs">
-                                <p>Can AI Read Brain Signals to Detect Schizophrenia?</p>        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2-->
-                <div class="rvt-cols-4-md rvt-flex rvt-m-top-xl">
-                    <div class="rvt-card rvt-card--raised">
-                        <div class="rvt-card__body">
-                            <div class="rvt-flex rvt-items-center">
-                                <!--Icon-->
-                                <div class="rvt-card__image rvt-flex" aria-hidden="true">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
-                                        viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2" 
-                                        stroke-linecap="round" stroke-linejoin="round" 
-                                        class="lucide lucide-cpu-icon lucide-cpu">
-                                        <path d="M12 20v2"/><path d="M12 2v2"/>
-                                        <path d="M17 20v2"/><path d="M17 2v2"/>
-                                        <path d="M2 12h2"/><path d="M2 17h2"/>
-                                        <path d="M2 7h2"/><path d="M20 12h2"/><path d="M20 17h2"/>
-                                        <path d="M20 7h2"/>
-                                        <path d="M7 20v2"/>
-                                        <path d="M7 2v2"/>
-                                        <rect x="4" y="4" width="16" height="16" rx="2"/>
-                                        <rect x="8" y="8" width="8" height="8" rx="1"/>
-                                    </svg>
-                                </div>
-                                <!--Title-->
-                                <h3 class="rvt-card__title rvt-ts-sm rvt-p-lr-md">
-                                    <a href="info-wt.html">Join our Website Team</a>
-                                </h3>
-                            </div> 
-                            <!--Description-->  
-                            <div class="rvt-card__content rvt-flow rvt-text-left rvt-m-lr-xs">                 
-                                <p>Develop puzzles for our Weekly Challenge and help us make this website better :)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3-->
-                <div class="rvt-cols-4-md rvt-flex rvt-m-top-xl">
-                    <div class="rvt-card rvt-card--raised">
-                        <div class="rvt-card__body">
-                            <div class="rvt-flex rvt-items-center">
-                                <!--Icon-->
-                                <div class="rvt-card__image rvt-flex" aria-hidden="true">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
-                                        viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2" 
-                                        stroke-linecap="round" stroke-linejoin="round" 
-                                        class="lucide lucide-lightbulb-icon lucide-lightbulb">
-                                        <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
-                                        <path d="M9 18h6"/>
-                                        <path d="M10 22h4"/>
-                                    </svg>
-                                </div>
-                                <!--Title-->
-                                <h3 class="rvt-card__title rvt-ts-sm rvt-p-lr-sm">
-                                    <a href="info-mt.html">Join our Media Team</a>
-                                </h3>
-                            </div>
-                            <!--Description-->
-                            <div class="rvt-card__content rvt-flow rvt-text-left rvt-m-lr-xs">
-                                <p>Want a creative outlet, real experience, and something cool to point to in interviews?</p>        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
    
-
-
     <!-- **********************************************************************
         Event Calendar
     *********************************************************************** -->
 
-    <div class="rvt-bg-black-000 rvt-p-tb-xxl rvt-p-bottom-3-xl">
+    <div class="rvt-p-tb-xxl rvt-p-bottom-3-xl">
         <div class="rvt-container-md rvt-m-top-lg">
             <div class="rvt-billboard rvt-billboard--center">
                 <div class="rvt-billboard__image">
@@ -558,22 +385,20 @@
                     Event 1
                 *********************************************************** -->
 
-                <div class="rvt-cols-4-md [ rvt-flex rvt-m-top-lg rvt-m-top-xxl-md-up ]">
-                    <div class="rvt-card rvt-card--raised rvt-card--clickable">
+                <div class="rvt-cols-4-md [ rvt-flex rvt-m-top-lg rvt-m-top-xxl-md-up ]" >
+                    <div class="rvt-card rvt-card--raised rvt-card--clickable" style="border-radius: 24px;">
                         <div class="rvt-card__image">
-                            <img src="images/2.png" alt="Replace this value with appropriate alternative text" loading="lazy">
+                            <img src="images/2.png" alt="Replace this value with appropriate alternative text" loading="lazy" style="border-radius: 24px;">
                         </div>
                         <div class="rvt-card__body">
                             <div class="rvt-card__eyebrow">Networking</div>
                             <h2 class="rvt-card__title rvt-m-top-xs">
                                 <a href="https://titanatlas.iusb.edu/event/11685045">Join Our Weekly Meeting</a>
                             </h2>
-                            <div class="rvt-card__content [ rvt-flow ]">
-                                <p>Celebrate 2026 with ACM, eat some pizza, and get to know fellow members!</p>
-                            </div>
+                           
                             <div class="rvt-card__content rvt-card__meta rvt-flex rvt-flex-align-center rvt-gap-sm">
                                 <rvt-icon name="clock" class="rvt-color-crimson" aria-hidden="true"></rvt-icon>
-                                <span>Jan 28, 2026</span>
+                                <span>Feb 18, 2026</span>
                             </div>
                             <time class="rvt-p-left-lg rvt-ts-xs" datetime="15:00">3:00 PM – 4:00 PM</time> 
                             <div class="rvt-card__meta rvt-flex rvt-flex-align-center rvt-gap-sm">
@@ -589,26 +414,23 @@
                 *********************************************************** -->
 
                 <div class="rvt-cols-4-md [ rvt-flex rvt-m-top-lg rvt-m-top-xxl-md-up ]">
-                    <div class="rvt-card rvt-card--raised rvt-card--clickable">
+                    <div class="rvt-card rvt-card--raised rvt-card--clickable" style="border-radius: 24px;">
                         <div class="rvt-card__image">
-                            <img src="images/resume cover.png" alt="Replace this value with appropriate alternative text" loading="lazy">
+                            <img src="images/showcase.png" alt="Replace this value with appropriate alternative text" loading="lazy" style="border-radius: 24px;">
                         </div>
                         <div class="rvt-card__body">
-                            <div class="rvt-card__eyebrow">Workshop</div>
+                            <div class="rvt-card__eyebrow">Networking</div>
                             <h2 class="rvt-card__title rvt-m-top-xs">
-                                <a href="#0" class="rvt-m-bottom-lg">Build Your Resume</a>
+                                <a href="#0">Project Showcase Night</a>
                             </h2>
-                            <div class="rvt-card__content [ rvt-flow ]">
-                                <p>Learn Andrew's best professional tips and tricks. Boost your hireability.</p>
-                            </div>
                             <div class="rvt-card__content rvt-card__meta rvt-flex rvt-flex-align-center rvt-gap-sm">
                                 <rvt-icon name="clock" class="rvt-color-crimson" aria-hidden="true"></rvt-icon>
-                                <span>Feb 4, 2026</span>
+                                <span>Feb 25, 2026</span>
                             </div>
                             <time class="rvt-p-left-lg rvt-ts-xs" datetime="15:00">3:00 PM – 5:00 PM</time> 
                             <div class="rvt-card__meta rvt-flex rvt-flex-align-center rvt-gap-sm">
                                 <rvt-icon name="map-pin" class="rvt-color-crimson"></rvt-icon>
-                                <span>SAC 223</span>
+                                <span>NS 211</span>
                             </div>
                         </div>
                     </div>
@@ -619,21 +441,19 @@
                 *********************************************************** -->
 
                 <div class="rvt-cols-4-md [ rvt-flex rvt-m-top-lg rvt-m-top-xxl-md-up ]">
-                    <div class="rvt-card rvt-card--raised rvt-card--clickable">
+                    <div class="rvt-card rvt-card--raised rvt-card--clickable" style="border-radius: 24px;">
                         <div class="rvt-card__image">
-                            <img src="images/computer.jpg" alt="Replace this value with appropriate alternative text" loading="lazy">
+                            <img src="images/computer.jpg" alt="Replace this value with appropriate alternative text" loading="lazy" style="border-radius: 24px;">
                         </div>
                         <div class="rvt-card__body">
                             <div class="rvt-card__eyebrow">Workshop</div>
                             <h2 class="rvt-card__title rvt-m-top-xs">
-                                <a href="#0">Personal Portfolio Part 1</a>
+                                <a href="#0">Something's Coming Up...</a>
                             </h2>
-                            <div class="rvt-card__content [ rvt-flow ]">
-                                <p>Hang out with Lucas. Bring your laptop. Get a clear structure for your personal website.</p>
-                            </div>
+                            
                             <div class="rvt-card__content rvt-card__meta rvt-flex rvt-flex-align-center rvt-gap-sm">
                                 <rvt-icon name="clock" class="rvt-color-crimson" aria-hidden="true"></rvt-icon>
-                                <span>Feb 11, 2026</span>
+                                <span>March, 2026</span>
                             </div>
                             <time class="rvt-p-left-lg rvt-ts-xs" datetime="15:00">3:00 PM – 5:00 PM</time> 
                             <div class="rvt-card__meta rvt-flex rvt-flex-align-center rvt-gap-sm">
@@ -646,36 +466,7 @@
             </div>
         </div>
     </div>
-
-
-    <!-- **********************************************************************
-        Billboard 2
-    *********************************************************************** -->
-
-    <div class="rvt-container-lg rvt-p-top-xxl rvt-p-bottom-md">
-        <div class="rvt-billboard rvt-justify-center">
-            <div class="rvt-billboard__image rvt-width-xxl">
-                <img id="Li-Will-img" src="images/friends.jpg" alt="Le Li Kruczek and Will Keeler" title="Le Li Kruczek and Will Keeler">
-            </div>
-            <div id="quote-container" class="rvt-billboard__body rvt-m-right-3-xl">
-                <div class="rvt-billboard__content rvt-flow ">
-                    <div class="rvt-quote rvt-flow rvt-text-left">
-                        <div id="quote" class="rvt-ts-26 rvt-font-serif">
-                            <p>The first time I joined an ACM meeting I felt the community and support that everyone talks about. 
-                            Now, as an active member, I get to work directly with fellow students on amazing projects and watch them grow. 
-                            It's a very rewarding experience.</p>
-                            </div>  
-                    </div>            
-                    <p>
-                        <span class="rvt-quote__title">Le Li Kruczek</span>
-                        <span class="rvt-quote__subtitle">Computer Science Ph.D. Candidate, ACM Member since 2023</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+    
     <!-- **********************************************************************
         Officers
     *********************************************************************** -->
@@ -692,7 +483,7 @@
 
                 <!-- Officer 1 -->
                 <div class="rvt-cols-3-md rvt-flex rvt-m-top-xxl">
-                    <div class="rvt-card rvt-card--raised">
+                    <div class="rvt-card rvt-card--raised" style="border-radius: 16px;">
                         <div class="rvt-card__body rvt-text-center">
                             <div class="rvt-card__image rvt-flex rvt-justify-center">
                                 <img src="images/samiksha.jpg" alt="Samiksha" style="width:80px; height:80px; object-fit:cover; border-radius:50%;">
@@ -721,7 +512,7 @@
 
                 <!-- Officer 2 -->
                 <div class="rvt-cols-3-md rvt-flex rvt-m-top-xxl">
-                    <div class="rvt-card rvt-card--raised">
+                    <div class="rvt-card rvt-card--raised" style="border-radius: 16px;">
                         <div class="rvt-card__body rvt-text-center">
                             <div class="rvt-card__image rvt-flex rvt-justify-center">
                                 <img src="images/tatsiana.jpg" alt="Tatsiana" style="width:80px; height:80px; object-fit:cover; border-radius:50%;">
@@ -750,7 +541,7 @@
 
                 <!-- Officer 3 -->
                 <div class="rvt-cols-3-md rvt-flex rvt-m-top-xxl">
-                    <div class="rvt-card rvt-card--raised">
+                    <div class="rvt-card rvt-card--raised" style="border-radius: 16px;">
                         <div class="rvt-card__body rvt-text-center">
                             <div class="rvt-card__image rvt-flex rvt-justify-center">
                                 <img src="images/lucas.jpg" alt="Lucas" style="width:80px; height:80px; object-fit:cover; border-radius:50%;">
@@ -780,7 +571,7 @@
 
                 <!-- Officer 4 -->
                 <div class="rvt-cols-3-md rvt-flex rvt-m-top-xxl">
-                    <div class="rvt-card rvt-card--raised">
+                    <div class="rvt-card rvt-card--raised" style="border-radius: 16px;">
                         <div class="rvt-card__body rvt-text-center">
                             <div class="rvt-card__image rvt-flex rvt-justify-center">
                                 <img src="images/cuitlo.jpg" alt="Cuitlo" style="width:80px; height:80px; object-fit:cover; border-radius:50%;">
@@ -807,8 +598,6 @@
                     </div>
                 </div>
             </div>
-        
-
                
         
         <!-- **********************************************************************
@@ -855,261 +644,37 @@
                     </div>
                 </div>
 
-
-
             </div>
         </div>
     </div>
     </div>
 
-
-    <!-- **********************************************************************
-        Billboard 3
-    *********************************************************************** -->
-
-    <div class="rvt-container-lg rvt-p-bottom-lg rvt-m-top-xxl-md-up">
-        <div class="rvt-billboard">
-            <div class="rvt-billboard__image rvt-width-xxl rvt-m-top-md">
-                <img src="images/li.png" alt="Replace this value with appropriate alternative text">
-            </div>
-            <div class="rvt-billboard__body rvt-m-right-xxl">
-                <h2 class="rvt-billboard__title">Get in on all the ACM hype</h2>
-                <div class="rvt-billboard__content [ rvt-flow ]">
-                    <p>ACM Chapter is a nonstop computing experience you don't want to miss.
-                    A community that feels like family. Professors who care about where you are—and where you're going. 
-                    Opportunities beyond your wildest dreams and inspiration at every turn.</p>
-                    <p>Get resources on joining our club, learn about upcoming events, and discover what it means to be part of our community.</p>
-                    <a class="rvt-cta" href="https://titanatlas.iusb.edu/organization/acmchapter">
-                    Join us on Titan Atlas
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- **********************************************************************
-        Resources & Links
-    *********************************************************************** -->
-
-    <div class="rvt-bg-black-000 rvt-m-top-xl-md-up rvt-p-bottom-xxl">
-        <div class="rvt-container-lg rvt-p-top-xxl rvt-p-top-2-xl-md-up">
-            <div class="rvt-billboard rvt-billboard--center">
-                <div class="rvt-billboard__body">
-                    <h2 class="rvt-billboard__title" id="Resources">Resources & Links</h2>
-                    <p class="rvt-billboard__content [ rvt-flow ]">Helpful resources for your academic and professional journey</p>
-                </div>
-            </div>
-            
-            <div class="rvt-row rvt-justify-center rvt-row--loose">
-
-                <!-- Tech Organizations -->
-                <div class="rvt-cols-4-md rvt-m-top-xl">
-                    <div class="rvt-card rvt-card--raised rvt-card--clickable">
-                        <div class="rvt-card__body">
-                            <div class="rvt-card__image">
-
-                                <div class="rvt-disclosure rvt-p-tb-md" data-rvt-disclosure="disclosure-1">
-                                    <button class="rvt-disclosure__toggle rvt-ts-sm rvt-text-bold rvt-color-crimson" data-rvt-disclosure-toggle aria-expanded="false">Tech Organizations</button>
-                                    <div class="rvt-disclosure__content" data-rvt-disclosure-target hidden>
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://www.acm.org/chapters/students" target="_blank" class="rvt-link-bold">ACM Global</a>
-                                        </div>
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://queue.acm.org/" target="_blank" class="rvt-link-bold">ACM Queue</a>
-                                        </div>
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://xrds.acm.org/" target="_blank" class="rvt-link-bold">ACM Crossroads</a>
-                                        </div>    
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://dl.acm.org/" target="_blank" class="rvt-link-bold">ACM Digital Library</a>
-                                        </div>  
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://cacm.acm.org/" target="_blank" class="rvt-link-bold">Communications of ACM</a>
-                                        </div>   
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://upe.acm.org/" target="_blank" class="rvt-link-bold">Upsilon Pi Epsilon CS Honors</a>
-                                        </div>
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://www.computer.org/" target="_blank" class="rvt-link-bold">IEEE Computer Society</a>
-                                        </div>
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://www.computerscience.org/resources/women-in-computer-science/" target="_blank" class="rvt-link-bold">Women in CS</a>
-                                        </div>
-                                   </div>
-                                </div>
-                    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               
-
-                <!-- University Resources -->
-                <div class="rvt-cols-4-md rvt-m-top-xl">
-                    <div class="rvt-card rvt-card--raised rvt-card--clickable">
-                        <div class="rvt-card__body">
-                            <div class="rvt-card__image ">
-                                <div class="rvt-disclosure rvt-p-tb-md" data-rvt-disclosure="disclosure-1">
-                                    <button class="rvt-disclosure__toggle rvt-ts-sm rvt-text-bold rvt-color-crimson" data-rvt-disclosure-toggle aria-expanded="false">University Resources</button>
-                                    <div class="rvt-disclosure__content" data-rvt-disclosure-target hidden>
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://clas.iusb.edu/computer-science-informatics/index.html" target="_blank" class="rvt-link-bold">IUSB Computer Science Department</a>
-                                        </div>
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://southbend.iu.edu/students/academic-success-programs/academic-centers-for-excellence/index.html" target="_blank" class="rvt-link-bold">Academic Tutoring Services</a>
-                                        </div>
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://southbend.iu.edu/advising/index.html" target="_blank" class="rvt-link-bold">Academic Advising</a>
-                                        </div>    
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://southbend.iu.edu/students/career-services/index.html" target="_blank" class="rvt-link-bold">Career Services</a>
-                                        </div>
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://iuware.iu.edu/Windows" target="_blank" class="rvt-link-bold">IUware</a>
-                                        </div>  
-                                    </div>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <!-- Learning Resources -->
-                <div class="rvt-cols-4-md rvt-m-top-xl">
-                    <div class="rvt-card rvt-card--raised rvt-card--clickable">
-                        <div class="rvt-card__body">
-                            <div class="rvt-card__image ">
-                                <div class="rvt-disclosure rvt-p-tb-md" data-rvt-disclosure="disclosure-1">
-                                    <button class="rvt-disclosure__toggle rvt-ts-sm rvt-text-bold rvt-color-crimson" data-rvt-disclosure-toggle aria-expanded="false">Learning Resources</button>
-                                    <div class="rvt-disclosure__content" data-rvt-disclosure-target hidden>
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://leetcode.com/explore/featured/card/the-leetcode-beginners-guide/" target="_blank" class="rvt-link-bold">LeetCode</a>
-                                        </div>
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://github.com/" target="_blank" class="rvt-link-bold">GitHub</a>
-                                        </div>
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://stackoverflow.com/questions" target="_blank" class="rvt-link-bold">Stack Overflow</a>
-                                        </div>    
-                                        <div class="rvt-flex rvt-flex-align-center rvt-gap-xs rvt-m-top-sm">
-                                            <rvt-icon name="link-external" aria-hidden="true"></rvt-icon>
-                                            <a href="https://www.coursera.org/" target="_blank" class="rvt-link-bold">Coursera</a>
-                                        </div>  
-                                    </div>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
 
     
-
     <!-- **********************************************************************
-        Get In Touch
+        Billboard 2
     *********************************************************************** -->
-
-    <div class="rvt-p-top-xxl rvt-p-bottom-lg">
-        <div class="rvt-container-lg">
-            <div class="rvt-billboard rvt-billboard--center">
-                <div class="rvt-billboard__body">
-                    <h2 class="rvt-billboard__title" id="Resources">Join Our Community :)</h2>
+    <div>
+        <div class="rvt-container-lg rvt-p-top-xxl rvt-p-bottom-md">
+            <div class="rvt-billboard rvt-justify-center">
+                <div class="rvt-billboard__image rvt-width-xxl">
+                    <img id="Li-Will-img" src="images/friends.jpg" alt="Le Li Kruczek and Will Keeler" title="Le Li Kruczek and Will Keeler">
                 </div>
-            </div>
-            
-            <div class="rvt-row rvt-justify-center rvt-row--loose">
-
-                
-                <!-- Owl -->
-                <div class="rvt-card__image rvt-width-lg  rvt-m-top-xl rvt-flex">
-                    <img src="images/icons.png" class="rvt-bg-crimson-500">
-                </div>
-
-                <div class="rvt-flex rvt-width-lg rvt-card--raised rvt-card--clickable rvt-m-top-xl ">
-                    <div class="rvt-p-left-xl rvt-m-top-md rvt-card__body ">     
-
-                        <div class="rvt-flex rvt-flex-align-center rvt-gap-sm ">
-                            <rvt-icon name="link-external" class="rvt-color-crimson" aria-hidden="true"></rvt-icon>
-                            <a href="https://titanatlas.iusb.edu/organization/acmchapter" target="_blank" class="rvt-link-bold">Titan Atlas</a>
-                        </div>
-
-                        <div class="rvt-flex rvt-flex-align-center rvt-gap-sm rvt-m-top-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
-                                viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" 
-                                class="lucide lucide-instagram-icon lucide-instagram">
-                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-                            </svg>
-                            <a href="https://www.instagram.com/acmiusb/" target="_blank" class="rvt-link-bold">Instagram</a></li>
-                        </div>
-
-                        <div class="rvt-flex rvt-flex-align-center rvt-gap-sm rvt-m-top-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
-                                viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2" 
-                                stroke-linecap="round" stroke-linejoin="round" 
-                                class="lucide lucide-message-square-more-icon lucide-message-square-more">
-                                <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/>
-                                <path d="M12 11h.01"/>
-                                <path d="M16 11h.01"/>
-                                <path d="M8 11h.01"/>
-                            </svg>
-                            <a href="https://discord.com/invite/XFncxBpCDu" target="_blank" class="rvt-link-bold">Discord Server</a>
-                        </div>  
-
-                        <div class="rvt-flex rvt-flex-align-center rvt-gap-sm rvt-m-top-sm">
-                            <rvt-icon name="link-external" class="rvt-color-crimson" aria-hidden="true"></rvt-icon>
-                            <a href="https://iu.instructure.com/enroll/H9YMG6" target="_blank" class="rvt-link-bold">Canvas Course</a>
-                        </div>  
-
-                        <div class="rvt-flex rvt-flex-align-center rvt-gap-sm rvt-m-top-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
-                                viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2" 
-                                stroke-linecap="round" stroke-linejoin="round" 
-                                class="lucide lucide-github-icon lucide-github">
-                                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
-                                <path d="M9 18c-4.51 2-5-2-7-2"/>
-                            </svg>
-                            <a href="#" target="_blank" class="rvt-link-bold">GitHub Organization</a>
-                        </div>  
-
-                        <div class="rvt-flex rvt-flex-align-center rvt-gap-sm rvt-m-top-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
-                                viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2" 
-                                stroke-linecap="round" stroke-linejoin="round" 
-                                class="lucide lucide-linkedin-icon lucide-linkedin">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                <rect width="4" height="12" x="2" y="9"/>
-                                <circle cx="4" cy="4" r="2"/>
-                            </svg>
-                            <a href="#" target="_blank" class="rvt-link-bold">LinkedIn Group</a>
-                        </div>
+                <div id="quote-container" class="rvt-billboard__body rvt-m-right-3-xl">
+                    <div class="rvt-billboard__content rvt-flow ">
+                        <div class="rvt-quote rvt-flow rvt-text-left">
+                            <div id="quote" class="rvt-ts-26 rvt-font-serif">
+                                <p>The first time I joined an ACM meeting I felt the community and support that everyone talks about. 
+                                Now, as an active member, I get to work directly with fellow students on amazing projects and watch them grow. 
+                                It's a very rewarding experience.</p>
+                                </div>  
+                        </div>            
+                        <p>
+                            <span class="rvt-quote__title">Le Li Kruczek</span>
+                            <span class="rvt-quote__subtitle">Computer Science Ph.D. Candidate, ACM Member since 2023</span>
+                        </p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -1163,23 +728,107 @@
     </div>
 
 
-
-
 </main>
 
+<!-- **********************************************************************
+        Get In Touch
+    *********************************************************************** -->
+
+    <div class="rvt-p-top-xxl rvt-p-bottom-lg">
+        <div class="rvt-container-lg">
+            <div class="rvt-billboard rvt-billboard--center">
+                <div class="rvt-billboard__body">
+                    <h2 class="rvt-billboard__title" id="Resources">Join Our Community :)</h2>
+                </div>
+            </div>
+            
+            <div class="rvt-row rvt-justify-center rvt-row--loose">
+
+                
+                <!-- Alien NEED TO MAKE ITS EYES FOLLOW THE MOUSE CURSOR-->
+                <div class="rvt-card__image rvt-width-lg  rvt-m-top-xl rvt-flex">
+                    <img src="images/mascot1.png" class="rvt-bg-blue-600">
+                </div>
+
+                <div class="rvt-flex rvt-width-lg rvt-card--raised rvt-card--clickable rvt-m-top-xl ">
+                    <div class="rvt-p-left-xl rvt-m-top-md rvt-card__body ">     
+
+                        <div class="rvt-flex rvt-flex-align-center rvt-gap-sm ">
+                            <rvt-icon name="link-external" class="rvt-color-blue" aria-hidden="true"></rvt-icon>
+                            <a href="https://titanatlas.iusb.edu/organization/acmchapter" target="_blank" class="rvt-link-bold">Titan Atlas</a>
+                        </div>
+
+                        <div class="rvt-flex rvt-flex-align-center rvt-gap-sm rvt-m-top-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
+                                viewBox="0 0 24 24" fill="none" stroke="#006298" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" 
+                                class="lucide lucide-instagram-icon lucide-instagram">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                            </svg>
+                            <a href="https://www.instagram.com/acmiusb/" target="_blank" class="rvt-link-bold">Instagram</a></li>
+                        </div>
+
+                        <div class="rvt-flex rvt-flex-align-center rvt-gap-sm rvt-m-top-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
+                                viewBox="0 0 24 24" fill="none" stroke="#006298" stroke-width="2" 
+                                stroke-linecap="round" stroke-linejoin="round" 
+                                class="lucide lucide-message-square-more-icon lucide-message-square-more">
+                                <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/>
+                                <path d="M12 11h.01"/>
+                                <path d="M16 11h.01"/>
+                                <path d="M8 11h.01"/>
+                            </svg>
+                            <a href="https://discord.com/invite/XFncxBpCDu" target="_blank" class="rvt-link-bold">Discord Server</a>
+                        </div>  
+
+                        <div class="rvt-flex rvt-flex-align-center rvt-gap-sm rvt-m-top-sm">
+                            <rvt-icon name="link-external" class="rvt-color-blue" aria-hidden="true"></rvt-icon>
+                            <a href="https://iu.instructure.com/enroll/H9YMG6" target="_blank" class="rvt-link-bold">Canvas Course</a>
+                        </div>  
+
+                        <div class="rvt-flex rvt-flex-align-center rvt-gap-sm rvt-m-top-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
+                                viewBox="0 0 24 24" fill="none" stroke="#006298" stroke-width="2" 
+                                stroke-linecap="round" stroke-linejoin="round" 
+                                class="lucide lucide-github-icon lucide-github">
+                                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                                <path d="M9 18c-4.51 2-5-2-7-2"/>
+                            </svg>
+                            <a href="#" target="_blank" class="rvt-link-bold">GitHub Organization</a>
+                        </div>  
+
+                        <div class="rvt-flex rvt-flex-align-center rvt-gap-sm rvt-m-top-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
+                                viewBox="0 0 24 24" fill="none" stroke="#006298" stroke-width="2" 
+                                stroke-linecap="round" stroke-linejoin="round" 
+                                class="lucide lucide-linkedin-icon lucide-linkedin">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect width="4" height="12" x="2" y="9"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                            <a href="#" target="_blank" class="rvt-link-bold">LinkedIn Group</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 <!-- **************************************************************************
     Footer: Social media
 *************************************************************************** -->
 
-<div aria-labelledby="social-heading" class="rvt-footer-social rvt-bg-crimson-600" role="complementary">
+<div aria-labelledby="social-heading" class="rvt-footer-social rvt-bg-blue-600" role="complementary">
     <div class="rvt-container-lg">
         <h2 class="rvt-sr-only" id="social-heading">Social media</h2>
         <ul class="rvt-footer-social__list">
             <li>
                 <a href="https://www.instagram.com/acmiusb/">
-                    <span class="rvt-sr-only rvt-color-white">Instagram for IU</span>
+                    <span class="rvt-sr-only rvt-color-white">Instagram</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="40" viewBox="0 0 40 40" width="40">
                         <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="#7A1705"></path>
                         <path d="M24.3004 29.9999H15.6004C12.5004 29.9999 9.90039 27.4999 9.90039 24.2999V15.5999C9.90039 12.4999 12.4004 9.8999 15.6004 9.8999H24.3004C27.4004 9.8999 30.0004 12.3999 30.0004 15.5999V24.2999C30.0004 27.4999 27.5004 29.9999 24.3004 29.9999ZM24.3004 28.4999C25.4004 28.4999 26.5004 28.0999 27.2004 27.2999C27.9004 26.4999 28.4004 25.4999 28.4004 24.3999V15.6999C28.4004 14.5999 28.0004 13.4999 27.2004 12.7999C26.4004 11.9999 25.4004 11.5999 24.3004 11.5999H15.6004C14.5004 11.5999 13.4004 11.9999 12.7004 12.7999C11.9004 13.5999 11.5004 14.5999 11.5004 15.6999V24.3999C11.5004 25.4999 11.9004 26.5999 12.7004 27.2999C13.5004 27.9999 14.5004 28.4999 15.6004 28.4999H24.3004Z" fill="#F7F7F8"></path>
@@ -1188,13 +837,13 @@
                     </svg>
                 </a>
             </li>
-            <li class="rvt-p-top-xs">
+            <li class="rvt-p-top-xs rvt-p-lr-sm" >
                 <a href="https://titanatlas.iusb.edu/organization/acmchapter">
                     <span class="rvt-sr-only rvt-color-white">Titan Atlas</span>
                     <image src="images/ta.svg" height="25" viewBox="0 0 40 40" width="25">
                 </a>
             </li>
-            <li class="rvt-p-top-xs rvt-p-lr-xxs">
+            <li class="rvt-p-top-xs rvt-p-lr-xs">
                 <a href="#0">
                     <span class="rvt-sr-only rvt-color-white">GitHub for IU</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="#ffffff" 
@@ -1204,7 +853,7 @@
                     </svg>
                 </a>
             </li>
-            <li class="rvt-p-top-xs rvt-m-right-xxs">
+            <li class="rvt-p-top-xs rvt-m-right-sm">
                 <a href="https://discord.com/invite/XFncxBpCDu">
                     <span class="rvt-sr-only rvt-color-white">Discord</span>
                     <image src="images/dc.svg" height="25" viewBox="0 0 40 40" width="25">
@@ -1229,7 +878,7 @@
     Footer: Resource links
 *************************************************************************** -->
 
-<div aria-labelledby="resources-heading" class="rvt-footer-resources rvt-bg-crimson-600" role="complementary">
+<div aria-labelledby="resources-heading" class="rvt-footer-resources rvt-bg-blue-600" role="complementary">
     <h2 class="rvt-sr-only" id="resources-heading">Additional resources</h2>
     <div class="rvt-container-lg">
         <div class="rvt-row">
@@ -1300,7 +949,7 @@
     Footer: Copyright
 **************************************************************************** -->
 
-<footer class="rvt-footer-base rvt-bg-crimson-600">
+<footer class="rvt-footer-base rvt-bg-blue-600">
     <div class="rvt-container-lg">
         <div class="rvt-footer-base__inner">
             <div class="rvt-footer-base__logo">
@@ -1322,7 +971,6 @@
         </div>
     </div>
 </footer>
-
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -1397,20 +1045,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 410); // match transition duration
   }
 
-  // --- DETERMINE IF IN MOBILE VIEW ---
-    function isMobileView() {
-      return window.innerWidth < 640; //Matches the current CSS mobile breakpoint
-    }
-
   // --- BUTTON LISTENERS ---
-  if (isMobileView()) {
-    nextBtn.addEventListener("click", () => move(2)); //Shows only 1 image at a time
-    prevBtn.addEventListener("click", () => move(-2));
-  } else { //Web view
-    nextBtn.addEventListener("click", () => move(1)); //Advances 2 images at a time
-    prevBtn.addEventListener("click", () => move(-1));
-  }
-  
+  nextBtn.addEventListener("click", () => move(1));
+  prevBtn.addEventListener("click", () => move(-1));
 
   // --- DRAG / SWIPE SUPPORT ---
   let startX = 0;
@@ -1484,16 +1121,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("keydown", e => {
     if (!isGalleryInView()) return;
-    if (e.key === "ArrowRight" && !isMobileView()) {  
-        move(1); //Web view
-    } else {    
-        move(2); //Mobile view
-    }
-    if (e.key === "ArrowLeft" && !isMobileView()) {     
-        move(-1); //Web view:
-    } else {    
-        move(-2); //Mobile view
-    }
+    if (e.key === "ArrowRight") move(1);
+    if (e.key === "ArrowLeft") move(-1);
   });
 
   // --- INITIAL POSITION ---
