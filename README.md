@@ -1,6 +1,6 @@
 ### WEBSITE DEVELOPMENT AGENDA, folks :)
 
-View our website here: https://tania-krauch.github.io/ACM-Chapter-Website/
+View our website here: https://tania-krauch.github.io/ACM-Website/
 
 ### PRIMARY
 
