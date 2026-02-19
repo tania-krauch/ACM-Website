@@ -91,11 +91,13 @@ video, .video {
 
 .rvt-card--raised {
   transition: transform 0.3s ease-in-out;
+  border-radius: 16px;
 }
 
 .rvt-card--raised:hover {
   transform: scale(1.015);
 }
+
 
 /* ========== HERO TEXT STYLES ========== */
 
