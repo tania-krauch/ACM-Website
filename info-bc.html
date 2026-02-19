@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="author" content="Tatsiana Krauchonak">
+  <title>Schizophrenia Research</title>
+  <link href="https://assets.iu.edu/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/rivet-core@2.9.0/css/rivet.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/rivet-stickers@0.3.1/dist/rivet-sticker-element.css">
+  <script type="module" src="https://unpkg.com/rivet-stickers@0.3.1/dist/rivet-stickers.js"></script>
+</head>
+<body class="rvt-layout">
+
+<!-- **************************************************************************
+    Header
+*************************************************************************** -->
+<header class="rvt-header-wrapper">
+    
+    <!-- **********************************************************************
+        "Skip to main content" link for keyboard users
+    *********************************************************************** -->
+
+    <a class="rvt-header-wrapper__skip-link" href="#main-content">Skip to main content</a>
+    
+    <!-- **********************************************************************
+        Global header area
+    *********************************************************************** -->
+    
+    <div class="rvt-header-global">
+        <div class="rvt-container-lg">
+            <div class="rvt-header-global__inner">
+                <div class="rvt-header-global__logo-slot">
+                    <a class="rvt-lockup" href="https://southbend.iu.edu/">
+                        
+                        <!-- **************************************************
+                            Trident logo
+                        *************************************************** -->
+                        <!-- ACM Logo Option
+                        <img src="images/acm-c.png"  alt="ACM Logo" width="45" height="45">
+                        --> 
+
+                        <div class="rvt-lockup__tab">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="rvt-lockup__trident" viewBox="0 0 28 34">
+                                <path fill="currentColor" d="M-3.34344e-05 4.70897H8.83308V7.174H7.1897V21.1426H10.6134V2.72321H8.83308V0.121224H18.214V2.65476H16.2283V21.1426H19.7889V7.174H18.214V4.64047H27.0471V7.174H25.0614V23.6761L21.7746 26.8944H16.2967V30.455H18.214V33.8787H8.76463V30.592H10.6819V26.8259H5.20403L1.91726 23.6077V7.174H-3.34344e-05V4.70897Z"></path>
+                            </svg>
+                        </div>
+
+                        <!-- **************************************************
+                            Website or application title 
+                        *************************************************** -->
+
+                        <div class="rvt-lockup__body">
+                            <span class="rvt-lockup__title">ACM Chapter</span>
+                            <span class="rvt-lockup__subtitle">IU South Bend</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="rvt-header-global__controls">
+                    <div data-rvt-disclosure="menu" data-rvt-close-click-outside>
+                        <button aria-expanded="false" class="rvt-global-toggle rvt-global-toggle--menu rvt-hide-lg-up" data-rvt-disclosure-toggle="menu">
+                            <span class="rvt-sr-only">Menu</span>
+                            <svg class="rvt-global-toggle__open" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">  <path d="M15 4H1V2h14v2Zm0 5H1V7h14v2ZM1 14h14v-2H1v2Z"/></svg>
+                            <svg class="rvt-global-toggle__close" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">  <path d="m3.5 2.086 4.5 4.5 4.5-4.5L13.914 3.5 9.414 8l4.5 4.5-1.414 1.414-4.5-4.5-4.5 4.5L2.086 12.5l4.5-4.5-4.5-4.5L3.5 2.086Z"/></svg>
+                        </button>
+
+                        <!-- ******************************************************
+                            Primary navigation
+                        ******************************************************* -->
+
+                        <nav aria-label="Main" class="rvt-header-menu" data-rvt-disclosure-target="menu" hidden>
+                            <ul class="rvt-header-menu__list">
+                                <li class="rvt-header-menu__item">
+                                    <div class="rvt-header-menu__dropdown rvt-dropdown" data-rvt-dropdown="primary-nav-3">
+                                        <div class="rvt-header-menu__group">
+                                            <a class="rvt-header-menu__link" href="index.html" aria-current="page">Home</a>
+                                            <button aria-expanded="false" class="rvt-dropdown__toggle rvt-header-menu__toggle" data-rvt-dropdown-toggle="primary-nav-3">
+                                                <span class="rvt-sr-only">More sub-navigation links</span>
+                                                <svg class="rvt-global-toggle__open" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">  <path d="m15.146 6.263-1.292-1.526L8 9.69 2.146 4.737.854 6.263 8 12.31l7.146-6.047Z"/></svg>
+                                            </button>
+                                        </div>
+                                        <div class="rvt-header-menu__submenu rvt-dropdown__menu rvt-dropdown__menu--right" data-rvt-dropdown-menu="primary-nav-3" hidden>
+                                            <ul class="rvt-header-menu__submenu-list">
+                                                <li class="rvt-header-menu__submenu-item">
+                                                    <a class="rvt-header-menu__submenu-link" href="index.html #Highlights">Recent Highlights</a>
+                                                </li>
+                                                <li class="rvt-header-menu__submenu-item">
+                                                    <a class="rvt-header-menu__submenu-link" href="index.html #Calendar">Event Calendar</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rvt-header-menu__item">
+                                    <a class="rvt-header-menu__link" href="challenge.html">Challenge</a>
+                                </li>
+                                <li class="rvt-header-menu__item rvt-header-menu__item--current">
+                                    <a class="rvt-header-menu__link" href="projects.html">Opportunities</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- **************************************************************************
+    Main content area
+*************************************************************************** -->
+
+<main id="main-content" class="rvt-layout__wrapper rvt-layout__wrapper--single rvt-container-sm">
+    <div class="rvt-layout__content">
+
+        <!-- ******************************************************************
+            Breadcrumb navigation
+        ******************************************************************* -->
+        
+        <nav class="rvt-flex rvt-items-center" role="navigation" aria-label="Breadcrumb">
+            <ol class="rvt-breadcrumbs rvt-grow-1">
+                <li>
+                    <a href="index.html">
+                        <span class="rvt-sr-only">Home</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">  <path d="m8 .798 7 4.667V15H9v-4.444H7V15H1V5.465L8 .798ZM3 6.535V13h2V8.556h6V13h2V6.535L8 3.202 3 6.535Z"/></svg>
+                    </a>
+                </li>
+                <li><a href="projects.html">Opportunities</a></li>
+                <li><a href="info.html">Schizophrenia EEG Detection</a></li>
+            </ol>
+            <a class="rvt-hide-md-up rvt-text-regular rvt-ts-14 rvt-inline-flex rvt-items-center rvt-p-tb-xxs rvt-p-lr-xs rvt-link-bold rvt-border-radius rvt-bg-blue-000 rvt-shrink-0" href="#section-nav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">  <path d="M7 1v10.844L2.146 7.737.854 9.263 8 15.31l7.146-6.047-1.292-1.526L9 11.844V1H7Z"/></svg>
+                <span class="rvt-m-left-xs">Section navigation</span>
+            </a>
+        </nav>
+        
+       <!-- ******************************************************************
+            Page title and summary
+        ******************************************************************* -->
+
+        <div class="rvt-m-top-xxl rvt-m-top-md-md-up rvt-flow rvt-prose">
+            <h1>Using Brain Signals and AI to Better Understand Schizophrenia</h1>
+            <p class="rvt-ts-20 rvt-color-black-500">How Deep Learning Is Changing Mental Health Research</p>
+        </div>
+        
+        <!-- **************************************************************
+            Author
+        *************************************************************** -->
+        <div class=" rvt-border-top rvt-m-top-lg-md-up rvt-p-bottom-sm">
+            <div class="rvt-container-md rvt-p-top-sm">
+                <div class="rvt-flex-md-up rvt-items-center-md-up"> 
+                    <div class="rvt-card__image rvt-flex rvt-justify-center rvt-m-right-md-md-up">
+                        <img src="images/acm-gr.png" alt="Cuitlo" style="width:35px; height:35px; object-fit:cover; border-radius:50%;">
+                    </div>  
+                    
+                    <div class="rvt-prose rvt-flow">
+                        <h4>Samiksha BC, Tatsiana Krauchonak, Lucas Carpenter et al</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="rvt-border-top"></div>
+
+        
+        <!-- ******************************************************************
+            Content
+        ******************************************************************* -->
+        
+        <div class="rvt-prose rvt-flow rvt-m-top-xl">
+            
+            <!-- **************************************************************
+                Feature slot
+            *************************************************************** -->
+            
+            <div class="rvt-layout__feature-slot">
+                <div class="rvt-card rvt-card--raised">
+                    <div class="rvt-card__body">
+                        <span class="rvt-ts-18 rvt-text-bold">
+                            <a href="https://www.preprints.org/manuscript/202601.0860" class="rvt-cta">Read the Full Research Article</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- **************************************************************
+                Running text
+            *************************************************************** -->
+            
+            <p>Schizophrenia is a complex neurological disorder that affects how people think, perceive reality, and interact with the world. 
+                Diagnosing it is difficult because symptoms vary widely between individuals and often overlap with other mental health conditions. 
+                Traditionally, diagnosis relies on behavioral observation and patient self-reports, which can be subjective and inconsistent.
+            </p>
+            <p>What if brain activity itself could help doctors detect schizophrenia more accurately?</p>
+            <p>That question is at the heart of recent research exploring the use of electroencephalography (EEG) 
+                and machine learning to identify schizophrenia-related patterns in brain signals. 
+                The paper “Deep Learning versus Classical Machine Learning for Schizophrenia EEG Signal Classification” investigates whether 
+                modern deep learning techniques outperform traditional machine learning approaches when analyzing EEG data.
+            </p>
+            <p>The results suggest that deep learning may be a powerful tool for improving early detection and understanding of schizophrenia.</p>
+
+            <hr>
+
+            <h2>What Is EEG and Why Does It Matter?</h2>
+            <p>EEG is a non-invasive technique that measures electrical activity in the brain using electrodes placed on the scalp. 
+                These signals reflect how neurons communicate and are often used to study sleep, epilepsy, attention, and neurological disorders.
+            </p>
+            <p>EEG is especially useful for schizophrenia research because:</p>
+            <ul>
+                <li>It captures real-time brain activity</li>
+                <li>It is relatively low-cost and accessible</li>
+                <li>It can reveal subtle differences in neural patterns that are not visible through behavior alone</li>
+            </ul>
+            <p>However, EEG data is extremely complex. Raw brain signals are noisy, high-dimensional, and difficult to interpret manually. 
+                This is where machine learning becomes essential.
+            </p>
+
+            <!-- **************************************************************
+                Breakout element
+            *************************************************************** -->
+            
+            <figure class="rvt-layout__break-out">
+                <img src="images/eeg2.jpg" alt="EEG Brain">
+            </figure>
+
+
+            <h2>Classical Machine Learning vs. Deep Learning</h2>
+            <p>The paper compares two broad approaches to analyzing EEG data:</p>
+
+            <h3>1. Classical Machine Learning</h3>
+            <p>These methods require researchers to manually extract features from EEG signals before classification. 
+                Common techniques include:</p>
+            <ul>
+                <li>Support Vector Machines (SVM)</li>
+                <li>Random Forests</li>
+                <li>k-Nearest Neighbors (k-NN)</li>
+            </ul>    
+            <p>To use these models, researchers must decide in advance which signal characteristics matter, such as frequency bands or statistical measures. 
+                While effective, this approach depends heavily on human-designed features, which may miss important patterns.
+            </p>
+
+            <h3>2. Deep Learning</h3>
+            <p>Deep learning models, such as Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs), 
+                learn features automatically from raw or minimally processed data.</p>
+            <p>Instead of being told what to look for, deep learning models:</p>
+            <ul>
+                <li>Learn patterns directly from EEG signals</li>
+                <li>Capture complex, non-linear relationships</li>
+                <li>Scale better with large datasets</li>
+            </ul>    
+            <p>This makes deep learning especially promising for analyzing brain data, where important patterns may be subtle or hidden.
+            </p>
+
+            <hr>
+
+            <h2>The Dataset and Experimental Setup</h2>
+            <p>The researchers used a publicly available EEG dataset containing recordings from individuals with schizophrenia and healthy control subjects. 
+                The data was collected under different conditions to ensure diversity and realism.</p>
+            <p>Key steps in the experiment included:</p>
+            <ul>
+                <li>Preprocessing EEG signals to remove noise</li>
+                <li>Training multiple classical ML models and deep learning models</li>
+                <li>Comparing classification accuracy, robustness, and generalization</li>
+            </ul>    
+            <p>The goal was simple: Which approach can more accurately distinguish between schizophrenia and non-schizophrenia EEG signals?
+            </p>
+
+            <hr>
+
+            <h2>Key Findings</h2>
+            <p>The results were clear and consistent:</p>
+            <p>Deep learning models outperformed classical machine learning models</p>
+            <ul>
+                <li>CNN-based architectures achieved the highest classification accuracy</li>
+                <li>Deep models were better at handling variability in EEG signals</li>
+                <li>Performance remained strong across different recording conditions</li>
+            </ul>   
+            <p>Classical methods still worked, but with limitations</p>
+            <ul>
+                <li>They performed reasonably well when features were carefully engineered</li>
+                <li>However, their accuracy dropped when signal conditions changed</li>
+                <li>Feature extraction required significant domain expertise</li>
+            </ul> 
+            <p>In short, deep learning provided better performance with less manual intervention.</p>
+
+            <!-- **************************************************************
+                Breakout element
+            *************************************************************** -->
+            
+            <figure class="rvt-layout__break-out">
+                <img src="images/EEG-brain1.png" alt="Brain">
+                <figcaption>EEG brain illustration. Note. From Wireless and wearable EEG, by BIOPAC Systems, Inc. (2024), 
+                    BIOPAC Blog (https://blog.biopac.com/wireless-and-wearable-eeg)/</figcaption>
+            </figure>
+            
+
+            <h2>Why This Matters</h2>
+            <p>This research has important implications for both computer science and healthcare:</p>
+            <p>For Mental Health</p>
+            <ul>
+                <li>More objective diagnostic tools could support clinicians</li>
+                <li>Earlier and more accurate detection may improve patient outcomes</li>
+                <li>EEG-based systems could complement traditional diagnosis methods</li>
+            </ul>   
+            <p>For Students and Researchers</p>
+            <ul>
+                <li>Shows how AI can be applied to real-world medical problems</li>
+                <li>Demonstrates the advantage of deep learning for complex data</li>
+                <li>Highlights the growing role of interdisciplinary work between CS and neuroscience</li>
+            </ul> 
+            
+            <hr>
+
+            <h2>Challenges and Ethical Considerations</h2>
+
+            <p>Despite the promising results, the paper also acknowledges limitations:</p>
+            <ul>
+                <li>Deep learning models require large datasets</li>
+                <li>Interpretability remains a challenge: models can be “black boxes”</li>
+                <li>Clinical deployment would require extensive validation and ethical oversight</li>
+            </ul>   
+            
+            <p>AI should support, not replace, medical professionals.</p>
+
+            <hr>
+
+            <h2>Conclusion</h2>
+
+            <p>Deep learning has significant advantages over classical machine learning when analyzing EEG data for schizophrenia detection. 
+                By automatically learning complex patterns from brain signals, deep learning models offer a more powerful 
+                and flexible approach to mental health research.</p>
+            
+            <p>For students, this work is a compelling example of how skills in programming, machine learning, and 
+                data science can directly contribute to solving meaningful societal and medical challenges.</p>
+
+            <p>As AI continues to evolve, its role in understanding the human brain may become one of its most impactful applications.</p>
+
+        </div>
+    </div>
+</main>
+
+<!-- **************************************************************************
+    Footer: Social media
+*************************************************************************** -->
+
+<div aria-labelledby="social-heading" class="rvt-footer-social rvt-bg-crimson-600" role="complementary">
+    <div class="rvt-container-lg">
+        <h2 class="rvt-sr-only" id="social-heading">Social media</h2>
+        <ul class="rvt-footer-social__list">
+            <li>
+                <a href="https://www.instagram.com/acmiusb/">
+                    <span class="rvt-sr-only rvt-color-white">Instagram for IU</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="40" viewBox="0 0 40 40" width="40">
+                        <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="#7A1705"></path>
+                        <path d="M24.3004 29.9999H15.6004C12.5004 29.9999 9.90039 27.4999 9.90039 24.2999V15.5999C9.90039 12.4999 12.4004 9.8999 15.6004 9.8999H24.3004C27.4004 9.8999 30.0004 12.3999 30.0004 15.5999V24.2999C30.0004 27.4999 27.5004 29.9999 24.3004 29.9999ZM24.3004 28.4999C25.4004 28.4999 26.5004 28.0999 27.2004 27.2999C27.9004 26.4999 28.4004 25.4999 28.4004 24.3999V15.6999C28.4004 14.5999 28.0004 13.4999 27.2004 12.7999C26.4004 11.9999 25.4004 11.5999 24.3004 11.5999H15.6004C14.5004 11.5999 13.4004 11.9999 12.7004 12.7999C11.9004 13.5999 11.5004 14.5999 11.5004 15.6999V24.3999C11.5004 25.4999 11.9004 26.5999 12.7004 27.2999C13.5004 27.9999 14.5004 28.4999 15.6004 28.4999H24.3004Z" fill="#F7F7F8"></path>
+                        <path d="M25.4006 19.9C25.4006 22.9 23.0006 25.3 20.0006 25.3C17.0006 25.3 14.6006 22.9 14.6006 19.9C14.6006 16.9 17.0006 14.5 20.0006 14.5C23.0006 14.5 25.4006 17 25.4006 19.9ZM20.0006 16.4C18.1006 16.4 16.5006 18 16.5006 19.9C16.5006 21.8 18.1006 23.4 20.0006 23.4C21.9006 23.4 23.5006 21.8 23.5006 19.9C23.5006 18 21.9006 16.4 20.0006 16.4Z" fill="#F7F7F8"></path>
+                        <path d="M25.5002 15.8002C26.2182 15.8002 26.8002 15.2182 26.8002 14.5002C26.8002 13.7822 26.2182 13.2002 25.5002 13.2002C24.7822 13.2002 24.2002 13.7822 24.2002 14.5002C24.2002 15.2182 24.7822 15.8002 25.5002 15.8002Z" fill="#F7F7F8"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="rvt-p-top-xs">
+                <a href="https://titanatlas.iusb.edu/organization/acmchapter">
+                    <span class="rvt-sr-only rvt-color-white">Titan Atlas</span>
+                    <image src="images/ta.svg" height="25" viewBox="0 0 40 40" width="25">
+                </a>
+            </li>
+            <li class="rvt-p-top-xs rvt-p-lr-xxs">
+                <a href="#0">
+                    <span class="rvt-sr-only rvt-color-white">GitHub for IU</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="#ffffff" 
+                        class="icon icon-tabler icons-tabler-filled icon-tabler-brand-github">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" />
+                    </svg>
+                </a>
+            </li>
+            <li class="rvt-p-top-xs rvt-m-right-xxs">
+                <a href="https://discord.com/invite/XFncxBpCDu">
+                    <span class="rvt-sr-only rvt-color-white">Discord</span>
+                    <image src="images/dc.svg" height="25" viewBox="0 0 40 40" width="25">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/indiana-university/">
+                    <span class="rvt-sr-only rvt-color-white">Linkedin</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="40" viewBox="0 0 40 40" width="40">
+                        <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="#7A1705"></path>
+                        <path d="M11.3 16H15V28H11.3V16ZM13.2 10C14.4 10 15.4 11 15.4 12.2C15.4 13.4 14.4 14.4 13.2 14.4C12 14.4 11 13.4 11 12.2C11 11 12 10 13.2 10Z" fill="#F7F7F8"></path>
+                        <path d="M17.3999 16.0002H20.9999V17.6002C21.4999 16.7002 22.6999 15.7002 24.4999 15.7002C28.2999 15.7002 28.9999 18.2002 28.9999 21.4002V28.0002H25.2999V22.2002C25.2999 20.8002 25.2999 19.0002 23.3999 19.0002C21.4999 19.0002 21.1999 20.5002 21.1999 22.1002V28.0002H17.4999V16.0002H17.3999Z" fill="#F7F7F8"></path>
+                    </svg>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!-- **************************************************************************
+    Footer: Resource links
+*************************************************************************** -->
+
+<div aria-labelledby="resources-heading" class="rvt-footer-resources rvt-bg-crimson-600" role="complementary">
+    <h2 class="rvt-sr-only" id="resources-heading">Additional resources</h2>
+    <div class="rvt-container-lg">
+        <div class="rvt-row">
+            <div class="rvt-cols-3-md">
+                <h3 class="rvt-footer-resources__heading rvt-width-sm">ACM Chapter at IUSB</h3>
+                <div class="rvt-footer-resources__text-block">
+                    1700 Mishawaka Ave
+                    <br />
+                    South Bend, IN
+                    <br />
+                    46615
+                </div>
+                <div class="rvt-footer-resources__text-block">
+                    tkrauch@iu.edu
+                </div>
+            </div>
+            <div class="rvt-cols-3-md">
+                <h3 class="rvt-footer-resources__heading">Resources</h3>
+                <ul class="rvt-footer-resources__list">
+                    <li class="rvt-footer-resources__list-item">
+                        <a href="https://clas.iusb.edu/computer-science-informatics/index.html">CS and Informatics</a>
+                    </li>
+                    <li class="rvt-footer-resources__list-item">
+                        <a href="https://servicenow.iu.edu/kb">IT Support</a>
+                    </li>
+                    <li class="rvt-footer-resources__list-item">
+                        <a href="https://iuware.iu.edu/">IUware</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="rvt-cols-3-md">
+                <h3 class="rvt-footer-resources__heading">Find</h3>
+                <ul class="rvt-footer-resources__list">
+                    <li class="rvt-footer-resources__list-item">
+                        <a href="index.html #Calendar">Event Calendar</a>             
+                    </li>
+                    <li class="rvt-footer-resources__list-item">
+                        <a href="index.html #Highlights">Recent Highlights</a>
+                    </li>
+                    <li class="rvt-footer-resources__list-item">
+                        <a href="challenge.html">Weekly Challenge</a>
+                    </li>
+                    <li class="rvt-footer-resources__list-item">
+                        <a href="projects.html">ACM Projects</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rvt-cols-3-md">
+                <h3 class="rvt-footer-resources__heading ">Root</h3>
+                <ul class="rvt-footer-resources__list">
+                    <li class="rvt-footer-resources__list-item">
+                        <a href="https://www.acm.org/">ACM National</a>
+                    </li>
+                    <li class="rvt-footer-resources__list-item">
+                        <a href="https://titanatlas.iusb.edu/organization/acmchapter">ACM Titan Atlas</a>
+                    </li>
+                    <li class="rvt-footer-resources__list-item">
+                        <a href="https://iu.instructure.com/enroll/H9YMG6">ACM Canvas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- **************************************************************************
+    Footer: Copyright
+**************************************************************************** -->
+
+<footer class="rvt-footer-base rvt-bg-crimson-600">
+    <div class="rvt-container-lg">
+        <div class="rvt-footer-base__inner">
+            <div class="rvt-footer-base__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <polygon fill="currentColor" points="15.3 3.19 15.3 5 16.55 5 16.55 15.07 13.9 15.07 13.9 1.81 15.31 1.81 15.31 0 8.72 0 8.72 1.81 10.12 1.81 10.12 15.07 7.45 15.07 7.45 5 8.7 5 8.7 3.19 2.5 3.19 2.5 5 3.9 5 3.9 16.66 6.18 18.98 10.12 18.98 10.12 21.67 8.72 21.67 8.72 24 15.3 24 15.3 21.67 13.9 21.67 13.9 18.98 17.82 18.98 20.09 16.66 20.09 5 21.5 5 21.5 3.19 15.3 3.19" fill="#231f20" />
+                </svg>
+            </div>
+            <ul class="rvt-footer-base__list">
+                <li class="rvt-footer-base__item">
+                    <a class="rvt-footer-base__link" href="https://accessibility.iu.edu/assistance/">Accessibility</a>
+                </li>
+                <li class="rvt-footer-base__item">
+                    <a class="rvt-footer-base__link" href="#https://southbend.iu.edu/privacy/">Privacy Notice</a>
+                </li>
+                <li class="rvt-footer-base__item">
+                    <a class="rvt-footer-base__link" href="#https://www.iu.edu/copyright/index.html">Copyright</a> © 2026 The Trustees of <a class="rvt-footer-base__link" href="https://www.iu.edu">Indiana University</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="https://unpkg.com/rivet-core@2.9.0/js/rivet.min.js"></script>
+<script>
+  Rivet.init();
+</script>
+</body>
+</html>
