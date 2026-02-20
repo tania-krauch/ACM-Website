@@ -91,13 +91,27 @@ video, .video {
 
 .rvt-card--raised {
   transition: transform 0.3s ease-in-out;
-  border-radius: 16px;
+  border-radius: 16px !important;
 }
 
 .rvt-card--raised:hover {
   transform: scale(1.015);
 }
 
+.icon-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7A1705;
+    border-radius: 50%;
+    width: 40px;       /* circle size */
+    height: 40px;
+}
+
+.icon-circle img {
+    width: 25px;
+    height: 25px;
+}
 
 /* ========== HERO TEXT STYLES ========== */
 

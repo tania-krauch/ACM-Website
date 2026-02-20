@@ -38,7 +38,8 @@
                         <!-- **************************************************
                             ACM logo
                         *************************************************** -->
-                        <img src="images/acm-c.png"  alt="ACM Logo" width="45" height="45">
+                        <img src="images/acm-l.png"  alt="ACM Logo" width="45" height="45">
+
 
                         <!-- **************************************************
                             Website or application title 
@@ -88,8 +89,11 @@
                                 <li class="rvt-header-menu__item">
                                     <a class="rvt-header-menu__link" href="challenge.html">Challenge</a>
                                 </li>
+                                <li class="rvt-header-menu__item">
+                                    <a class="rvt-header-menu__link" href="projects.html">Projects</a>
+                                </li>
                                 <li class="rvt-header-menu__item rvt-header-menu__item--current">
-                                    <a class="rvt-header-menu__link" href="projects.html">Opportunities</a>
+                                    <a class="rvt-header-menu__link" href="news.html">News</a>
                                 </li>
                             </ul>
                         </nav>
@@ -119,7 +123,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">  <path d="m8 .798 7 4.667V15H9v-4.444H7V15H1V5.465L8 .798ZM3 6.535V13h2V8.556h6V13h2V6.535L8 3.202 3 6.535Z"/></svg>
                     </a>
                 </li>
-                <li><a href="projects.html">Opportunities</a></li>
+                <li><a href="projects.html">News</a></li>
                 <li><a href="info.html">Media Team</a></li>
             </ol>
             <a class="rvt-hide-md-up rvt-text-regular rvt-ts-14 rvt-inline-flex rvt-items-center rvt-p-tb-xxs rvt-p-lr-xs rvt-link-bold rvt-border-radius rvt-bg-blue-000 rvt-shrink-0" href="#section-nav">
@@ -146,7 +150,15 @@
             <div class="rvt-container-md rvt-p-top-sm">
                 <div class="rvt-flex-md-up rvt-items-center-md-up"> 
                     <div class="rvt-card__image rvt-flex rvt-justify-center rvt-m-right-md-md-up">
-                        <img src="images/acm-gr.png" alt="Cuitlo" style="width:35px; height:35px; object-fit:cover; border-radius:50%;">
+                        <div class="rvt-card__image rvt-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                                stroke="#75838f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                                class="lucide lucide-circle-user-round-icon lucide-circle-user-round">
+                                <path d="M18 20a6 6 0 0 0-12 0"/>
+                                <circle cx="12" cy="10" r="4"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                        </div>
                     </div>  
                     
                     <div class="rvt-prose rvt-flow">
@@ -337,13 +349,13 @@
     Footer: Social media
 *************************************************************************** -->
 
-<div aria-labelledby="social-heading" class="rvt-footer-social rvt-bg-crimson-600" role="complementary">
+<div aria-labelledby="social-heading" class="rvt-footer-social rvt-bg-blue-600" role="complementary">
     <div class="rvt-container-lg">
         <h2 class="rvt-sr-only" id="social-heading">Social media</h2>
         <ul class="rvt-footer-social__list">
             <li>
                 <a href="https://www.instagram.com/acmiusb/">
-                    <span class="rvt-sr-only rvt-color-white">Instagram for IU</span>
+                    <span class="rvt-sr-only rvt-color-white">Instagram</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="40" viewBox="0 0 40 40" width="40">
                         <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="#7A1705"></path>
                         <path d="M24.3004 29.9999H15.6004C12.5004 29.9999 9.90039 27.4999 9.90039 24.2999V15.5999C9.90039 12.4999 12.4004 9.8999 15.6004 9.8999H24.3004C27.4004 9.8999 30.0004 12.3999 30.0004 15.5999V24.2999C30.0004 27.4999 27.5004 29.9999 24.3004 29.9999ZM24.3004 28.4999C25.4004 28.4999 26.5004 28.0999 27.2004 27.2999C27.9004 26.4999 28.4004 25.4999 28.4004 24.3999V15.6999C28.4004 14.5999 28.0004 13.4999 27.2004 12.7999C26.4004 11.9999 25.4004 11.5999 24.3004 11.5999H15.6004C14.5004 11.5999 13.4004 11.9999 12.7004 12.7999C11.9004 13.5999 11.5004 14.5999 11.5004 15.6999V24.3999C11.5004 25.4999 11.9004 26.5999 12.7004 27.2999C13.5004 27.9999 14.5004 28.4999 15.6004 28.4999H24.3004Z" fill="#F7F7F8"></path>
@@ -352,14 +364,14 @@
                     </svg>
                 </a>
             </li>
-            <li class="rvt-p-top-xs">
-                <a href="https://titanatlas.iusb.edu/organization/acmchapter">
+            <li class="rvt-p-lr-sm" >
+                <a href="https://titanatlas.iusb.edu/organization/acmchapter" class="icon-circle">
                     <span class="rvt-sr-only rvt-color-white">Titan Atlas</span>
-                    <image src="images/ta.svg" height="25" viewBox="0 0 40 40" width="25">
+                    <image src="images/ta.svg" height="25" viewBox="0 0 40 40" width="25">    
                 </a>
             </li>
-            <li class="rvt-p-top-xs rvt-p-lr-xxs">
-                <a href="#0">
+            <li class="rvt-p-lr-sm icon-circle">
+                <a href="#0" class="rvt-p-top-md rvt-p-left-sm">                  
                     <span class="rvt-sr-only rvt-color-white">GitHub for IU</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="#ffffff" 
                         class="icon icon-tabler icons-tabler-filled icon-tabler-brand-github">
@@ -368,14 +380,14 @@
                     </svg>
                 </a>
             </li>
-            <li class="rvt-p-top-xs rvt-m-right-xxs">
-                <a href="https://discord.com/invite/XFncxBpCDu">
+            <li class="rvt-m-lr-sm">
+                <a href="https://discord.com/invite/XFncxBpCDu" class="icon-circle">
                     <span class="rvt-sr-only rvt-color-white">Discord</span>
                     <image src="images/dc.svg" height="25" viewBox="0 0 40 40" width="25">
                 </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/company/indiana-university/">
+                <a href="https://www.linkedin.com/company/indiana-university/" class="icon-circle">
                     <span class="rvt-sr-only rvt-color-white">Linkedin</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="40" viewBox="0 0 40 40" width="40">
                         <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="#7A1705"></path>
@@ -393,7 +405,7 @@
     Footer: Resource links
 *************************************************************************** -->
 
-<div aria-labelledby="resources-heading" class="rvt-footer-resources rvt-bg-crimson-600" role="complementary">
+<div aria-labelledby="resources-heading" class="rvt-footer-resources rvt-bg-blue-600" role="complementary">
     <h2 class="rvt-sr-only" id="resources-heading">Additional resources</h2>
     <div class="rvt-container-lg">
         <div class="rvt-row">
@@ -464,7 +476,7 @@
     Footer: Copyright
 **************************************************************************** -->
 
-<footer class="rvt-footer-base rvt-bg-crimson-600">
+<footer class="rvt-footer-base rvt-bg-blue-600">
     <div class="rvt-container-lg">
         <div class="rvt-footer-base__inner">
             <div class="rvt-footer-base__logo">
