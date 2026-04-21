@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- PASSWORD IS: GOTCHA -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hubBUDa</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232b2b2b'/%3E%3Ctext x='50' y='55' font-size='60' text-anchor='middle' fill='%23f0f0f0'%3EL%3C/text%3E%3C/svg%3E">
+    <style>
+        body { font-family: sans-serif; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        #app { text-align: center; max-width: 600px; width: 100%; }
+        .breadcrumb { color: #666; margin-bottom: 10px; }
+        .breadcrumb span::after { content: ' > '; }
+        .breadcrumb span:last-child::after { content: ''; }
+        a.hunt-link { display: block; margin: 5px 0; cursor: pointer; color: blue; text-decoration: underline; }
+        #backBtn { margin-top: 20px; padding: 8px 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <audio id="siteAudio" src="assets/audio/audio.mp3" loop></audio>
+    <div id="app"></div>
+
+    <script>
+        /* ── Audio ── */
+        const globalAudio = document.getElementById('siteAudio');
+        globalAudio.volume = 1;
+        function ensureAudio() { if (globalAudio.paused) globalAudio.play().catch(() => {}); }
+        document.addEventListener('click', function start() {
+            ensureAudio();
+            document.removeEventListener('click', start);
+        });
+
+        /* ── Data ── */
+        const huntTree = [
+            { id: 'link1', text: 'Link 1' },
+            { id: 'link2', text: 'Link 2' },
+            { id: 'link3', text: 'Link 3' },
+            { id: 'link4', text: 'Link 4' },
+            { id: 'link5', text: 'Link 5' }
+        ];
+
+        const countries = [
+            'Andorra','Comoros','Djibouti','Eswatini','Kiribati',
+            'Liechtenstein','Malta','Nauru','Palau','San Marino',
+            'Seychelles','Solomon Islands','Suriname','Tuvalu',
+            'Vanuatu','Sri Lanka'
+        ];
+
+        const app = document.getElementById('app');
+
+        /* ── Route table for scavenger hunt ── */
+        const huntRoutes = {
+            'link1':      { bc: ['Home','Link 1'],                              links: [{id:'link1a',text:'Link 1A'},{id:'link1b',text:'Link 1B'}], msg: 'Keep searching! Try another link.' },
+            'link1a':     { bc: ['Home','Link 1','Link 1A'],                    links: [{id:'link1a1',text:'Link 1A1'},{id:'link1a2',text:'Link 1A2'}], msg: 'Still not here. Try another.' },
+            'link1b':     { bc: ['Home','Link 1','Link 1B'],                    links: [], msg: 'No password here!' },
+            'link1a1':    { bc: ['Home','Link 1','Link 1A','Link 1A1'],         links: [], msg: 'No password here!' },
+            'link1a2':    { bc: ['Home','Link 1','Link 1A','Link 1A2'],         links: [], msg: 'No password here!' },
+            'link2':      { bc: ['Home','Link 2'],                              links: [{id:'link2a',text:'Link 2A'},{id:'link2b',text:'Link 2B'}], msg: 'Keep searching! Try another link.' },
+            'link2a':     { bc: ['Home','Link 2','Link 2A'],                    links: [{id:'link2a1',text:'Link 2A1'},{id:'link2a2',text:'Link 2A2'}], msg: 'Almost there! Try Link 2A2.' },
+            'link2a1':    { bc: ['Home','Link 2','Link 2A','Link 2A1'],         links: [], msg: 'No password here!' },
+            'link2a2':    { bc: ['Home','Link 2','Link 2A','Link 2A2'],         links: [{id:'link2a2final',text:'Final Link'}], msg: 'Final step!' },
+            'link2a2final': { bc: ['Home','Link 2','Link 2A','Link 2A2','Final Link'], links: [], msg: 'You found the end! The password is Decimal.', isFinal: true },
+            'link2b':     { bc: ['Home','Link 2','Link 2B'],                    links: [], msg: 'No password here!' },
+            'link3':      { bc: ['Home','Link 3'],                              links: [], msg: 'Keep searching! Try another link.' },
+            'link4':      { bc: ['Home','Link 4'],                              links: [], msg: 'Keep searching! Try another link.' },
+            'link5':      { bc: ['Home','Link 5'],                              links: [], msg: 'Keep searching! Try another link.' }
+        };
+
+        /* ── Screen: Password ── */
+        function renderPasswordScreen() {
+            app.innerHTML = '<h1>hubBUDa</h1><input id="passwordBox" type="text" placeholder="Enter password..." />';
+            ensureAudio();
+            const box = document.getElementById('passwordBox');
+            box.addEventListener('input', function () {
+                if (box.value.trim().toLowerCase() === 'gotcha') {
+                    box.value = '';
+                    renderMathScreen();
+                }
+            });
+        }
+
+        /* ── Screen: Math puzzle ── */
+        function renderMathScreen() {
+            app.innerHTML = `
+                <h1>hubDUBa</h1>
+                <div style="margin-top:40px;">
+                    <p>Puzzle: What is (3 &times; 4) + 8 - 5 + (2 &times; 3) - 1?</p>
+                    <div>
+                        <input id="mathAnswer" type="text" placeholder="Type your answer..." style="padding:8px;font-size:1em;">
+                    </div>
+                </div>`;
+            ensureAudio();
+            var mathBox = document.getElementById('mathAnswer');
+            mathBox.addEventListener('input', function () {
+                if (mathBox.value.trim() === '20') renderVideoScreen();
+            });
+        }
+
+        /* ── Screen: Video + Country ── */
+        function renderVideoScreen() {
+            const opts = countries.map(c =>
+                "<label><input type='radio' name='country' value='" + c + "'> " + c + "</label><br>"
+            ).join('');
+            app.innerHTML = `
+                <h1>hubDUBa</h1>
+                <div style="margin-top:40px;">
+                    <p>Congratulations! Here is your video:</p>
+                    <div id="videoContainer">
+                        <video width="480" controls autoplay>
+                            <source src="assets/video/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div style="margin-top:40px;">
+                        <p>What country is this?</p>
+                        <div id="countryChoices">${opts}</div>
+                    </div>
+                </div>`;
+            ensureAudio();
+            document.querySelectorAll("input[name='country']").forEach(function (r) {
+                r.addEventListener('click', function () {
+                    if (this.value === 'Sri Lanka') renderSuccessScreen();
+                });
+            });
+        }
+
+        /* ── Screen: Success ── */
+        function renderSuccessScreen() {
+            app.innerHTML = `
+                <h1>hubDUBa</h1>
+                <div style="margin-top:40px;">
+                    <p>Success! You guessed the country correctly: Sri Lanka!</p>
+                    <button id="continueBtn" style="margin-top:20px;padding:10px 20px;font-size:1em;">Continue</button>
+                </div>`;
+            ensureAudio();
+            document.getElementById('continueBtn').addEventListener('click', function () {
+                renderHuntScreen(['Home'], huntTree, 'Navigate this website and look for the special password!', true);
+            });
+        }
+
+        /* ── Screen: Victory ── */
+        function renderVictoryScreen() {
+            app.innerHTML = `
+                <h1>YOU WON A FROG!</h1>
+                <div style="margin-top:30px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Atelopus_zeteki1.jpg/440px-Atelopus_zeteki1.jpg" alt="A frog" style="max-width:400px;width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.3);">
+                    <p style="margin-top:20px;font-size:1.4em;font-weight:bold;">Congratulations! You won a frog!</p>
+                </div>`;
+            ensureAudio();
+        }
+
+        /* ── Screen: Scavenger hunt ── */
+        function renderHuntScreen(breadcrumb, links, message, isHome) {
+            const bcHTML = breadcrumb.map(b => '<span>' + b + '</span>').join('');
+            const lnHTML = links.map(l => '<a class="hunt-link" id="' + l.id + '">' + l.text + '</a>').join('');
+            /* Check if this is the final screen */
+            var key = breadcrumb.join('>');
+            var isFinal = false;
+            for (var rid in huntRoutes) {
+                if (huntRoutes[rid].bc.join('>') === key && huntRoutes[rid].isFinal) { isFinal = true; break; }
+            }
+            var passwordHTML = isFinal ? '<div style="margin-top:20px;"><input id="huntPassword" type="text" placeholder="Enter the password..." style="padding:8px;font-size:1em;"></div>' : '';
+            app.innerHTML =
+                '<h1>hubDUBa</h1>' +
+                '<div class="breadcrumb">' + bcHTML + '</div>' +
+                '<p>' + message + '</p>' +
+                '<div>' + lnHTML + '</div>' +
+                passwordHTML +
+                (isHome ? '' : '<button id="backBtn">Back</button>');
+            ensureAudio();
+
+            /* hunt password handler */
+            if (isFinal) {
+                var huntPw = document.getElementById('huntPassword');
+                if (huntPw) {
+                    huntPw.addEventListener('input', function () {
+                        if (huntPw.value.trim().toLowerCase() === 'decimal') {
+                            renderVictoryScreen();
+                        }
+                    });
+                }
+            }
+
+            /* link handlers */
+            links.forEach(function (l) {
+                var el = document.getElementById(l.id);
+                if (el) {
+                    el.addEventListener('click', function () {
+                        var route = huntRoutes[l.id];
+                        if (route) renderHuntScreen(route.bc, route.links, route.msg, false);
+                    });
+                }
+            });
+
+            /* back button */
+            if (!isHome) {
+                var backBtn = document.getElementById('backBtn');
+                if (backBtn) {
+                    backBtn.addEventListener('click', function () {
+                        var prev = breadcrumb.slice(0, -1);
+                        if (prev.length <= 1) {
+                            renderHuntScreen(['Home'], huntTree, 'Navigate this website and look for the special password!', true);
+                            return;
+                        }
+                        /* find matching route by breadcrumb */
+                        var key = prev.join('>');
+                        for (var id in huntRoutes) {
+                            if (huntRoutes[id].bc.join('>') === key) {
+                                renderHuntScreen(huntRoutes[id].bc, huntRoutes[id].links, huntRoutes[id].msg, false);
+                                return;
+                            }
+                        }
+                        renderHuntScreen(['Home'], huntTree, 'Navigate this website and look for the special password!', true);
+                    });
+                }
+            }
+        }
+
+        /* ── Boot ── */
+        renderPasswordScreen();
+    </script>
+</body>
+</html>
